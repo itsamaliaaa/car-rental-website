@@ -8,19 +8,32 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/footer.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <!-- HEADER -->
-    <header>
-      <nav class="navbar">
-        <h1 class="logo">logo</h1>
-        <ul class="nav-menu">
-          <li><a href="index.html">Beranda</a></li>
-          <li><a href="katalog.html">Katalog Mobil</a></li>
-          <li><a href="booking.html">Cek Booking</a></li>
-        </ul>
-      </nav>
+    <header class="navbar">
+      <div class="navbar_inner">
+        <div class="navbar_logo">
+          <img
+            class="logo"
+            src="assets/images/logo.svg"
+            alt="Logo Rental Mobil Aflah Jaya"
+          />
+        </div>
+        <nav class="navbar_nav">
+          <a href="index.html" class="nav-link active">Beranda</a>
+          <a href="katalog.html" class="nav-link">Katalog Mobil</a>
+          <a href="booking.html" class="nav-link">Cek Booking</a>
+        </nav>
+        <div class="navbar_cta">
+          <a href="booking.html" class="btn-booking">Booking Sekarang</a>
+        </div>
+      </div>
     </header>
 
     <!-- MAIN -->
@@ -33,7 +46,67 @@
 
     <!-- FOOTER -->
     <footer class="footer">
-      <p>© 2026 Rental Mobil. All rights reserved.</p>
+      <div class="footer_top">
+        <div class="footer_inner">
+          <div class="footer_brand">
+            <h2 class="brand-name">Aflah Jaya Rental</h2>
+            <p class="brand-desc">
+              Layanan rental mobil premium yang mengutamakan kenyamanan,
+              keamanan, dan kemudahan untuk setiap perjalanan Anda.
+            </p>
+            <div class="social-links">
+              <img
+                class="social-btn"
+                src="assets/icon/instagram.svg"
+                alt="logo instagram"
+              />
+              <img
+                class="social-btn"
+                src="assets/icon/facebook.svg"
+                alt="logo facebook"
+              />
+              <img
+                class="social-btn"
+                src="assets/icon/tiktok.svg"
+                alt="logo TikTok"
+              />
+            </div>
+          </div>
+
+          <div class="footer_col">
+            <h3 class="col-title">Layanan</h3>
+            <ul class="col-links">
+              <li><a href="#">Katalog Mobil</a></li>
+              <li><a href="#">Sewa Harian</a></li>
+              <li><a href="#">Sewa Mingguan</a></li>
+              <li><a href="#">Sewa Bulanan</a></li>
+              <li><a href="#">Dengan sopir</a></li>
+              <li><a href="#">Wisata Bandung</a></li>
+            </ul>
+          </div>
+
+          <div class="footer_col">
+            <h3 class="col-title">Akun & Pesanan</h3>
+            <ul class="col-links">
+              <li><a href="#">Cek Riwayat Booking</a></li>
+              <li><a href="#">Cara Pemesanan</a></li>
+            </ul>
+          </div>
+
+          <div class="footer_col">
+            <h3 class="col-title">Bantuan</h3>
+            <ul class="col-links">
+              <li><a href="#">Hubungi Kami</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer_bottom">
+        <div class="footer_bottom-inner">
+          <p class="copyright">© 2026 AJrent. Seluruh hak cipta dilindungi.</p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
