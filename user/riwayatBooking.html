@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cek Booking</title>
+    <link rel="stylesheet" href="../css/user/riwayatBooking.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">Afiah Jaya Rental</div>
+      <nav>
+        <a href="./beranda">Beranda</a>
+        <a href="./katalog">Katalog Mobil</a>
+        <a href="#" class="active">Cek Booking</a>
+      </nav>
+      <button class="btn-primary">Booking Sekarang</button>
+    </header>
+
+    <main class="container">
+      <!-- Title -->
+      <section class="title">
+        <h1>Cek Riwayat Booking Anda</h1>
+        <p>
+          Silakan masukkan email dan kode booking untuk melihat detail pemesanan
+          Anda.
+        </p>
+      </section>
+
+      <!-- Form -->
+      <section class="card">
+        <h3>Lihat Detail Booking</h3>
+        <div class="form-row">
+          <input type="email" placeholder="Masukkan Email" />
+          <input type="text" placeholder="Masukkan Kode Booking" />
+          <button class="btn-primary">Cek Booking</button>
+        </div>
+      </section>
+
+      <!-- Detail -->
+      <section class="card">
+        <div class="card-header">
+          <div>
+            <h3>Detail Booking Anda</h3>
+            <p>Berikut informasi pemesanan Anda</p>
+          </div>
+          <span class="status success">Success</span>
+        </div>
+
+        <div class="booking-info">
+          <img src="https://via.placeholder.com/100" alt="car" />
+          <div>
+            <p class="car-name">Toyota Avanza 2023</p>
+          </div>
+        </div>
+
+        <div class="grid">
+          <div>
+            <label>Kode Booking:</label>
+            <p>TRX12345</p>
+          </div>
+          <div>
+            <label>Nama Penyewa:</label>
+            <p>Budi Setiawan</p>
+          </div>
+          <div>
+            <label>Email:</label>
+            <p>budisetiawan@gmail.com</p>
+          </div>
+          <div>
+            <label>No Telepon:</label>
+            <p>+62 8999 0912</p>
+          </div>
+          <div>
+            <label>Tanggal Pengambilan:</label>
+            <p>10 April 2026</p>
+          </div>
+          <div>
+            <label>Tanggal Pengembalian:</label>
+            <p>12 April 2026</p>
+          </div>
+          <div>
+            <label>Waktu Pengambilan:</label>
+            <p>09.00</p>
+          </div>
+          <div>
+            <label>Waktu Pengembalian:</label>
+            <p>09.00</p>
+          </div>
+        </div>
+
+        <div class="footer-info">
+          <div>
+            <label>Durasi:</label>
+            <p>2 Hari</p>
+          </div>
+          <div class="price">
+            <label>Total Harga:</label>
+            <p>Rp 1.100.000</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Review -->
+      <section class="review">
+        <h2>Perjalanan selesai! 🚗✨</h2>
+        <p>Gimana pengalaman kamu selama menggunakan mobil ini?</p>
+
+        <div class="review-card">
+          <p class="center">Bagaimana Pengalamanmu?</p>
+
+          <div class="stars">★★★★★</div>
+
+          <label>Komentar *</label>
+          <input type="text" placeholder="Masukkan komentar" />
+
+          <label>Tambahkan Foto</label>
+          <input type="file" />
+
+          <button class="btn-primary">Kirim ulasan</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
