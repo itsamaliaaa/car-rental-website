@@ -29,7 +29,9 @@ aside {
 }
 
 .navopt.active {
-  background: #e5e7eb;
+  border-radius: 8px;
+  background: #e0e7ff;
+  color: #1e3a8a;
 }
 .navopt:hover {
   background: #f3f4f6;

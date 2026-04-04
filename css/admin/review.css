@@ -16,35 +16,39 @@ body {
 }
 
 /* Sidebar */
-.sidebar {
+aside {
   width: 240px;
-  background: #fff;
+  background: white;
   padding: 20px;
-  border-right: 1px solid #e5e7eb;
+  position: relative;
 }
 
-.sidebar .logo {
-  margin-bottom: 30px;
+#brand {
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
-.sidebar nav {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.sidebar a {
-  text-decoration: none;
-  color: #555;
+.navopt {
+  display: block;
   padding: 10px;
-  border-radius: 6px;
+  margin-bottom: 5px;
+  cursor: pointer;
 }
 
-.sidebar a.active {
+.navopt.active {
+  border-radius: 8px;
   background: #e0e7ff;
   color: #1e3a8a;
 }
+.navopt:hover {
+  background: #f3f4f6;
+}
 
+.logout {
+  position: absolute;
+  bottom: 20px;
+  color: red;
+}
 /* Main */
 .main {
   flex: 1;
@@ -168,4 +172,134 @@ body {
   .image-container {
     height: 180px;
   }
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+}
+
+body {
+  background: #f5f5f5;
+}
+
+/* Page container */
+#review-cards {
+  min-height: 100vh;
+  display: block;
+  justify-content: center;
+}
+.page {
+  min-height: 100vh;
+  display: block;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+}
+
+/* Card */
+.review-card {
+  width: 100%;
+  max-width: 900px;
+  margin: 10px;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 18px 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Header */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Left side */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+/* Placeholder image */
+.car-image {
+  width: 72px;
+  height: 48px;
+  background: #d1d5db;
+  border-radius: 6px;
+}
+
+/* Car info */
+.car-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.car-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.stars {
+  font-size: 14px;
+  color: #facc15; /* yellow */
+  letter-spacing: 1px;
+}
+
+/* Right side */
+.header-right {
+  text-align: right;
+}
+
+.email {
+  font-size: 13px;
+  color: #374151;
+}
+
+.date {
+  font-size: 12px;
+  color: #9ca3af;
+  margin-top: 2px;
+}
+
+/* Divider */
+.divider {
+  height: 1px;
+  background: #e5e7eb;
+  margin: 14px 0;
+}
+
+/* Content */
+.review-content {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #374151;
+}
+
+/* Footer */
+.card-footer {
+  margin-top: 14px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 6px;
+  font-size: 13px;
+}
+
+.status-label {
+  color: #6b7280;
+}
+
+.status-value {
+  color: #22c55e;
+  font-weight: 500;
 }
