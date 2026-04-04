@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rental Mobil</title>
   <link rel="stylesheet" href="../css/nav-adm.css" />
+  <link rel="stylesheet" href="../css/admin/mobil.css" />
 </head>
 
 <body>
@@ -45,13 +46,144 @@
 
   <!-- navbar -->
   <nav class="navbar-admin">
-      <img src="../assets/images/logo.svg" alt="Aflah Jaya Rental">
+    <img src="../assets/images/logo.svg" alt="Aflah Jaya Rental">
 
     <div class="profile-admin">
       <p>Admin</p>
       <img src="../assets/images/Rectangle 1.png" alt="Profile" class="foto-admin">
     </div>
   </nav>
+
+  <!-- manajemen mobil -->
+  <div class="manajemen-mobil">
+    <div class="manajemen-mobil-card">
+
+      <div class="manajemen-mobil-header">
+        <h1 class="judul">Manajemen Mobil</h1>
+        <a href="tambah-mobil.html" class="tambah"><img src="../assets/icon/add-01.svg" alt="icon">Tambah</a>
+      </div>
+
+
+      <div class="search-container">
+        <img class="search-icon" alt="search" src="../assets/icon/search.svg" />
+        <input type="text" class="search-input" placeholder="Cari Mobil" />
+      </div>
+
+      <div class="table-container">
+        <div class="table-row table-header">
+          <div class="nama">Nama</div>
+          <div class="foto">Foto</div>
+          <div class="detail">Detail</div>
+          <div class="harga">Sewa Dasar (per hari)</div>
+          <div class="bbm">Bahan Bakar</div>
+          <div class="asuransi">Asuransi Kendaraan</div>
+          <div class="driver">Driver (opsional)</div>
+          <div class="over-km">Biaya Over Kilometer</div>
+          <div class="harga">Driver (opsional)</div>
+          <div class="total">Total</div>
+          <div class="harga">TOTAL (dengan driver, 1 hari)</div>
+          <div class="syarat">Prasyarat Kendaraan</div>
+          <div class="syarat">Syarat & Ketentuan Umum</div>
+          <div class="status">Status</div>
+          <div class="aksi">Aksi</div>
+        </div>
+
+        <div class="table-row table-content">
+          <div class="nama">Toyota Avanza Tahun 2023</div>
+          <div class="foto">
+            <div class="gambar">Image</div>
+          </div>
+          <div class="detail">
+            Toyota Avanza 2023 merupakan pilihan ideal untuk perjalanan keluarga maupun kebutuhan harian. Dikenal
+            sebagai mobil y...
+          </div>
+          <div class="harga">Rp 350.000</div>
+          <div class="bbm">Ditanggung Penyewa</div>
+          <div class="asuransi">Termasuk</div>
+          <div class="driver">Rp 150.000/hari</div>
+          <div class="over-km">Rp 5.000/km (>200km/hari)</div>
+          <div class="harga">Rp 50.000 - Rp 250.000</div>
+          <div class="total">Rp 350.000</div>
+          <div class="harga">Rp 700.000</div>
+          <div class="syarat">
+            • Penyewa wajib memeriksa kondisi kendaraan bersama petugas sebelum dibawa...
+          </div>
+          <div class="syarat">
+            • Penyewa wajib memeriksa kondisi kendaraan bersama petugas sebelum dibawa...
+          </div>
+          <div class="status">
+            <div class="available">Available</div>
+          </div>
+          <div class="aksi">
+            <a href="edit-mobil.html" class="edit">
+              <img src="../assets/icon/pencil-edit-01.svg" alt="edit">
+            </a>
+            <a href="#konfirmasi-overlay" class="hapus">
+              <img src="../assets/icon/delete-01.svg" alt="hapus">
+            </a>
+          </div>
+        </div>
+
+        <div class="table-row table-content">
+          <div class="nama">Toyota Avanza Tahun 2023</div>
+          <div class="foto">
+            <div class="gambar">Image</div>
+          </div>
+          <div class="detail">
+            Toyota Avanza 2023 merupakan pilihan ideal untuk perjalanan keluarga maupun kebutuhan harian. Dikenal
+            sebagai mobil y...
+          </div>
+          <div class="harga">Rp 350.000</div>
+          <div class="bbm">Ditanggung Penyewa</div>
+          <div class="asuransi">Termasuk</div>
+          <div class="driver">Rp 150.000/hari</div>
+          <div class="over-km">Rp 5.000/km (>200km/hari)</div>
+          <div class="harga">Rp 50.000 - Rp 250.000</div>
+          <div class="total">Rp 350.000</div>
+          <div class="harga">Rp 700.000</div>
+          <div class="syarat">
+            • Penyewa wajib memeriksa kondisi kendaraan bersama petugas sebelum dibawa...
+          </div>
+          <div class="syarat">
+            • Penyewa wajib memeriksa kondisi kendaraan bersama petugas sebelum dibawa...
+          </div>
+          <div class="status">
+            <div class="booked">Booked</div>
+          </div>
+          <div class="aksi">
+            <a href="edit-mobil.html" class="edit">
+              <img src="../assets/icon/pencil-edit-01.svg" alt="edit">
+            </a>
+            <a href="#konfirmasi-overlay" class="hapus">
+              <img src="../assets/icon/delete-01.svg" alt="hapus">
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="frame-halaman">
+        <div class="halaman-container">
+          <div class="halaman-item">&lt;</div>
+          <div class="halaman-item active">1</div>
+          <div class="halaman-item">2</div>
+          <div class="halaman-item">...</div>
+          <div class="halaman-item">7</div>
+          <div class="halaman-item">&gt;</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <div id="konfirmasi-overlay" class="background-overlay">
+        <div class="card-overlay">
+            <h2>Apakah Kamu Yakin Ingin Menghapus Mobil Ini ?</h2>
+            <div class="tombol-container">
+                <a href="#" class="ya">Ya</a>
+                <a href="#" class="tidak">Tidak</a>
+            </div>
+        </div>
+    </div>
 
 </body>
 
