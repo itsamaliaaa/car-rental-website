@@ -226,7 +226,7 @@
 }
 
 .layanan-price.green {
-  color: #16A34A;
+  color: #16a34a;
   font-weight: 600;
 }
 
@@ -235,13 +235,13 @@
   height: 18px;
   border-radius: 4px;
   cursor: pointer;
-  accent-color: #0B1F67;
+  accent-color: #0b1f67;
 }
 
 .btn-simpan {
   width: 100%;
   height: 48px;
-  background-color: #0B1F67;
+  background-color: #0b1f67;
   color: #ffffff;
   font-family: "Inter";
   font-size: 0.9rem;
@@ -251,6 +251,10 @@
   cursor: pointer;
   box-shadow: 0 2px 10px rgba(26, 46, 90, 0.25);
   margin-top: 4px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
 }
 
 .btn-simpan:hover {
@@ -334,7 +338,7 @@
 }
 
 .rincian-value.green {
-  color: #16A34A;
+  color: #16a34a;
   font-weight: 600;
 }
 
@@ -362,9 +366,12 @@
 }
 
 .btn-konfirmasi {
+  display: flex;              
+  justify-content: center;   
+  align-items: center;        
   width: 100%;
   height: 44px;
-  background-color: #0B1F67;
+  background-color: #0b1f67;
   color: #ffffff;
   font-family: "Inter";
   font-size: 0.855rem;
@@ -372,6 +379,7 @@
   border: none;
   border-radius: 10px;
   cursor: pointer;
+  text-decoration: none;     
   transition: background-color 0.2s ease, transform 0.15s ease;
   box-shadow: 0 2px 10px rgba(26, 46, 90, 0.25);
 }
@@ -379,6 +387,85 @@
 .btn-konfirmasi:hover {
   background-color: #142347;
   transform: translateY(-1px);
+}
+
+.popup {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.25s ease;
+}
+
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup-box {
+  background: #fff;
+  padding: 24px 28px;
+  border-radius: 16px;
+  width: 320px;
+  text-align: center;
+
+  transform: translateY(20px) scale(0.95);
+  transition: all 0.25s ease;
+}
+
+.popup:target .popup-box {
+  transform: translateY(0) scale(1);
+}
+
+.popup-box h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  color: #111827;
+}
+
+.popup-box p {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+.popup-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.btn-outline {
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  text-decoration: none;
+  color: #374151;
+  font-size: 0.85rem;
+  transition: all 0.2s ease;
+}
+
+.btn-outline:hover {
+  background: #f3f4f6;
+}
+
+.btn-primary {
+  padding: 8px 16px;
+  border-radius: 10px;
+  background: #1a2e5a;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: #142347;
 }
 
 @media (max-width: 768px) {
