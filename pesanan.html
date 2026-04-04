@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rental Mobil</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/pesanan.css" />
+</head>
+
+<body>
+  <!-- MAIN -->
+  <main class="main">
+    <!-- Back Button -->
+    <div class="back-bar">
+      <a href="katalog.html" class="back-link">
+        <img src="assets/icon/back-icon.svg" alt="ikon kembali" />
+        Kembali
+      </a>
+    </div>
+
+    <section class="form-booking">
+      <!-- Identitas Penyewa -->
+      <div class="card">
+        <h2 class="card_title">Identitas Penyewa</h2>
+        <hr class="card_divider" />
+        <div class="form-row three-col">
+          <div class="form-field">
+            <label class="form-label">Nama Lengkap</label>
+            <input type="text" class="form-input" placeholder="Masukkan Nama" />
+          </div>
+          <div class="form-field">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-input" placeholder="Masukkan Email" />
+          </div>
+          <div class="form-field">
+            <label class="form-label">No. Telepon</label>
+            <input type="tel" class="form-input" placeholder="Nomor Telepon" />
+          </div>
+        </div>
+      </div>
+
+      <div class="booking_wrapper">
+
+        <!-- LEFT COLUMN -->
+        <div class="booking_left">
+
+          <!-- Jadwal Rental -->
+          <div class="card">
+            <h2 class="card_title">Jadwal Rental</h2>
+            <hr class="card_divider" />
+
+            <!-- Pengambilan -->
+            <div class="jadwal-row">
+              <span class="jadwal-label">Pengambilan</span>
+              <div class="jadwal-fields">
+                <div class="form-field">
+                  <label class="form-label">Tanggal</label>
+                  <input type="date" class="form-input" value="03/04/2026" />
+                </div>
+                <div class="form-field">
+                  <label class="form-label">Waktu</label>
+                  <input type="time" class="form-input" />
+                </div>
+              </div>
+            </div>
+
+            <hr class="row-divider" />
+
+            <!-- Pengembalian -->
+            <div class="jadwal-row">
+              <span class="jadwal-label">Pengembalian</span>
+              <div class="jadwal-fields">
+                <div class="form-field">
+                  <label class="form-label">Tanggal</label>
+                  <input type="date" class="form-input" />
+                </div>
+                <div class="form-field">
+                  <label class="form-label">Waktu</label>
+                  <input type="time" class="form-input" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Layanan Tambahan -->
+          <div class="card">
+            <div class="card_title-row">
+              <h2 class="card_title">Layanan Tambahan</h2>
+              <span class="badge-optional">(opsional)</span>
+            </div>
+            <hr class="card_divider" />
+
+            <div class="layanan-list">
+              <!-- Driver -->
+              <div class="layanan-item">
+                <div class="layanan-info">
+                  <p class="layanan-name">Driver</p>
+                  <p class="layanan-desc">Tidak termasuk biaya Tol</p>
+                </div>
+                <div class="layanan-right">
+                  <span class="layanan-price">Rp 250.000/hari</span>
+                  <input type="checkbox" class="layanan-check" />
+                </div>
+              </div>
+              <hr class="row-divider" />
+
+              <!-- Asuransi -->
+              <div class="layanan-item">
+                <div class="layanan-info">
+                  <p class="layanan-name">Asuransi</p>
+                  <p class="layanan-desc">Perlindungan kerusakan</p>
+                </div>
+                <div class="layanan-right">
+                  <span class="layanan-price green">Termasuk</span>
+                </div>
+              </div>
+              <hr class="row-divider" />
+
+              <!-- Bahan Bakar -->
+              <div class="layanan-item">
+                <div class="layanan-info">
+                  <p class="layanan-name">Bahan Bakar</p>
+                  <p class="layanan-desc">Isi ulang saat pengambilan</p>
+                </div>
+                <div class="layanan-right">
+                  <span class="layanan-price">Ditanggung penyewa</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Catatan -->
+          <div class="card">
+            <div class="card_title-row">
+              <h2 class="card_title">Catatan</h2>
+              <span class="badge-optional">(opsional)</span>
+            </div>
+            <hr class="card_divider" />
+            <textarea class="form-textarea"
+              placeholder="Contoh: keperluan khusus dan kondisi khusus, dll..."></textarea>
+          </div>
+
+          <!-- Simpan Button -->
+          <a href="#confirmPopup" class="btn-simpan">Simpan Data</a>
+
+          <!-- Popup -->
+          <div id="confirmPopup" class="popup">
+            <div class="popup-box">
+
+              <h3>Konfirmasi</h3>
+              <p>Apakah Anda yakin ingin menyimpan data?</p>
+
+              <div class="popup-actions">
+                <a href="#" class="btn-outline">Batal</a>
+                <a href="#" class="btn-primary">Ya, Simpan</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT COLUMN: Summary Card -->
+        <div class="booking_right">
+          <div class="summary-card">
+
+            <h3 class="summary-car-name">Toyota Avanza 2023</h3>
+
+            <div class="summary-img-wrap">
+              <img src="assets/images/big-car.svg" alt="Toyota Avanza 2023" class="summary-img" />
+            </div>
+
+            <hr class="card_divider" />
+
+            <p class="rincian-title">Rincian Biaya</p>
+
+            <div class="rincian-list">
+              <div class="rincian-row">
+                <span class="rincian-label">Sewa dasar</span>
+                <span class="rincian-value">Rp 350.000 × 1 hari</span>
+              </div>
+              <div class="rincian-row">
+                <span class="rincian-label">Asuransi</span>
+                <span class="rincian-value green">Gratis</span>
+              </div>
+              <div class="rincian-row">
+                <span class="rincian-label">Driver</span>
+                <span class="rincian-value">-</span>
+              </div>
+              <div class="rincian-row">
+                <span class="rincian-label">Deposit (dikembalikan)</span>
+                <span class="rincian-value">Rp 200.000</span>
+              </div>
+            </div>
+
+            <hr class="card_divider" />
+
+            <div class="total-wrap">
+              <p class="total-label">Total Pembayaran</p>
+              <p class="total-value">Rp 550.000</p>
+            </div>
+
+            <a href="https://web.whatsapp.com/" class="btn-konfirmasi">Konfirmasi via WhatsApp</a>
+
+          </div>
+        </div>
+
+      </div>
+
+
+    </section>
+</body>
+
+</html>

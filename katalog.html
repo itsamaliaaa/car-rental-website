@@ -8,32 +8,394 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/katalog.css" />
   </head>
 
   <body>
     <!-- HEADER -->
-    <header>
-      <nav class="navbar">
-        <h1 class="logo">logo</h1>
-        <ul class="nav-menu">
-          <li><a href="index.html">Beranda</a></li>
-          <li><a href="katalog.html">Katalog Mobil</a></li>
-          <li><a href="booking.html">Cek Booking</a></li>
-        </ul>
-      </nav>
+    <header class="navbar">
+      <div class="navbar_inner">
+        <div class="navbar_logo">
+          <img
+            class="logo"
+            src="assets/images/logo.svg"
+            alt="Logo Rental Mobil Aflah Jaya"
+          />
+        </div>
+        <nav class="navbar_nav">
+          <a href="index.html" class="nav-link">Beranda</a>
+          <a href="katalog.html" class="nav-link active">Katalog Mobil</a>
+          <a href="booking.html" class="nav-link">Cek Booking</a>
+        </nav>
+        <div class="navbar_cta">
+          <a href="katalog.html" class="btn-booking">Booking Sekarang</a>
+        </div>
+      </div>
     </header>
 
     <!-- MAIN -->
-    <main>
-      <!-- HERO -->
-      <section class="hero">
-        <h2>Katalog Mobil</h2>
+    <main class="main">
+      <section class="availability">
+        <div class="availability_card">
+          <h2 class="availability_title">Cek Ketersediaan Mobil</h2>
+
+          <div class="availability_form">
+            <!-- Pengambilan -->
+            <div class="form_group">
+              <p class="form_group-label">Pengambilan</p>
+              <div class="form_fields">
+                <!-- Tanggal Pengambilan -->
+                <div class="field">
+                  <label class="field_label" for="pickup-date">Tanggal</label>
+                  <div class="field_input-wrap">
+                    <input
+                      type="date"
+                      id="pickup-date"
+                      class="field_input"
+                      placeholder="DD/MM/YYYY"
+                    />
+                  </div>
+                </div>
+
+                <!-- Jam Pengambilan -->
+                <div class="field field-sm">
+                  <label class="field_label" for="pickup-time">Jam</label>
+                  <div class="field_input-wrap">
+                    <input
+                      type="time"
+                      id="pickup-time"
+                      class="field_input"
+                      placeholder="00:00"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pengembalian -->
+            <div class="form_group">
+              <p class="form_group-label">Pengembalian</p>
+              <div class="form_fields">
+                <!-- Tanggal Pengembalian -->
+                <div class="field">
+                  <label class="field_label" for="return-date">Tanggal</label>
+                  <div class="field_input-wrap">
+                    <input
+                      type="date"
+                      id="return-date"
+                      class="field_input"
+                      placeholder="DD/MM/YYYY"
+                    />
+                  </div>
+                </div>
+
+                <!-- Jam Pengembalian -->
+                <div class="field field-sm">
+                  <label class="field_label" for="return-time">Jam</label>
+                  <div class="field_input-wrap">
+                    <input
+                      type="time"
+                      id="return-time"
+                      class="field_input"
+                      placeholder="00:00"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tombol Cek -->
+            <div class="form_action">
+              <button class="btn-cek">Cek</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="search">
+        <div class="field_search">
+          <input
+            type="text"
+            id="search"
+            class="input_search"
+            placeholder="Cari Tipe Mobil..."
+          />
+        </div>
+      </section>
+
+      <section class="car-catalog">
+        <h2>Berbagai Pilihan Mobil Terbaik</h2>
+      </section>
+      <!-- ARMADA -->
+      <section class="armada">
+        <div class="container">
+          <!-- LIST CARD -->
+          <div class="armada-list">
+            <!-- CARD PERTAMA -->
+            <div class="car-card">
+              <div class="card-image">
+                <img
+                  src="https://asset.tribunnews.com/cZeZLx1wMHTUvcbktpluX_ZVCng=/1200x675/filters:upscale():quality(30):format(webp):focal(0.5x0.5:0.5x0.5)/tangerang/foto/bank/originals/harga-mobil-bekas-Toyota-Avanza-2018.jpg"
+                  alt="Toyota Avanza"
+                />
+                <span class="badge">Tersedia</span>
+              </div>
+
+              <div class="card-body">
+                <h3>Toyota Avanza 2023</h3>
+
+                <div class="rating">
+                  <span class="stars">★★★★★</span>
+                  <span class="rate">5.0</span>
+                  <span class="review">(75 ulasan)</span>
+                </div>
+
+                <p class="spec">Manual · 7 Kursi</p>
+                <div class="price">
+                  <span class="mulai">Mulai dari</span>
+                  <span class="harga">Rp 350k/hari</span>
+                </div>
+
+                <div class="card-btn">
+                  <a href="detail.html" class="btn-card">Lihat Detail</a>
+                  <a href="pesanan.html" class="btn-card">Booking</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD KEDUA -->
+            <div class="car-card">
+              <div class="card-image">
+                <img
+                  src="https://imgx.gridoto.com/crop/0x187:1440x1114/750x500/filters:watermark(file/2017/gridoto/img/watermark.png,5,5,60)/photo/2022/04/21/372e4599-3311-4f16-9b99-f191f5c7-20220421074311.jpeg"
+                  alt="Honda Brio 2022"
+                />
+                <span class="badge">Tersedia</span>
+              </div>
+
+              <div class="card-body">
+                <h3>Honda Brio 2022</h3>
+
+                <div class="rating">
+                  <span class="stars">★★★★★</span>
+                  <span class="rate">4.8</span>
+                  <span class="review">(52 ulasan)</span>
+                </div>
+
+                <p class="spec">Matic · 5 Kursi</p>
+                <div class="price">
+                  <span class="mulai">Mulai dari</span>
+                  <span class="harga">Rp 250k/hari</span>
+                </div>
+
+                <div class="card-btn">
+                  <a href="detail2.html" class="btn-card">Lihat Detail</a>
+                  <a href="pesanan2.html" class="btn-card">Booking</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD KETIGA -->
+            <div class="car-card">
+              <div class="card-image">
+                <img
+                  src="assets/images/car-daihatsuxenia.jpeg"
+                  alt="Daihatsu Xenia 2023"
+                />
+                <span class="badge-rent">Disewa</span>
+              </div>
+
+              <div class="card-body">
+                <h3>Daihatsu Xenia 2023</h3>
+
+                <div class="rating">
+                  <span class="stars">★★★★★</span>
+                  <span class="rate">4.9</span>
+                  <span class="review">(60 ulasan)</span>
+                </div>
+
+                <p class="spec">Manual · 7 Kursi</p>
+                <div class="price">
+                  <span class="mulai">Mulai dari</span>
+                  <span class="harga">Rp 300k/hari</span>
+                </div>
+
+                <div class="card-btn">
+                  <a href="detail3.html" class="btn-card">Lihat Detail</a>
+                  <a href="#" class="btn-card-rent">Booking</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="armada">
+        <div class="container">
+          <!-- LIST CARD -->
+          <div class="armada-list">
+            <!-- CARD PERTAMA -->
+            <div class="car-card">
+              <div class="card-image">
+                <img
+                  src="https://asset.tribunnews.com/cZeZLx1wMHTUvcbktpluX_ZVCng=/1200x675/filters:upscale():quality(30):format(webp):focal(0.5x0.5:0.5x0.5)/tangerang/foto/bank/originals/harga-mobil-bekas-Toyota-Avanza-2018.jpg"
+                  alt="Toyota Avanza"
+                />
+                <span class="badge">Tersedia</span>
+              </div>
+
+              <div class="card-body">
+                <h3>Toyota Avanza 2023</h3>
+
+                <div class="rating">
+                  <span class="stars">★★★★★</span>
+                  <span class="rate">5.0</span>
+                  <span class="review">(75 ulasan)</span>
+                </div>
+
+                <p class="spec">Manual · 7 Kursi</p>
+                <div class="price">
+                  <span class="mulai">Mulai dari</span>
+                  <span class="harga">Rp 350k/hari</span>
+                </div>
+
+                <div class="card-btn">
+                  <a href="detail.html" class="btn-card">Lihat Detail</a>
+                  <a href="pesanan.html" class="btn-card">Booking</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD KEDUA -->
+            <div class="car-card">
+              <div class="card-image">
+                <img
+                  src="https://imgx.gridoto.com/crop/0x187:1440x1114/750x500/filters:watermark(file/2017/gridoto/img/watermark.png,5,5,60)/photo/2022/04/21/372e4599-3311-4f16-9b99-f191f5c7-20220421074311.jpeg"
+                  alt="Honda Brio 2022"
+                />
+                <span class="badge">Tersedia</span>
+              </div>
+
+              <div class="card-body">
+                <h3>Honda Brio 2022</h3>
+
+                <div class="rating">
+                  <span class="stars">★★★★★</span>
+                  <span class="rate">4.8</span>
+                  <span class="review">(52 ulasan)</span>
+                </div>
+
+                <p class="spec">Matic · 5 Kursi</p>
+                <div class="price">
+                  <span class="mulai">Mulai dari</span>
+                  <span class="harga">Rp 250k/hari</span>
+                </div>
+
+                <div class="card-btn">
+                  <a href="detail2.html" class="btn-card">Lihat Detail</a>
+                  <a href="pesanan2.html" class="btn-card">Booking</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD KETIGA -->
+            <div class="car-card">
+              <div class="card-image">
+                <img
+                  src="assets/images/car-daihatsuxenia.jpeg"
+                  alt="Daihatsu Xenia 2023"
+                />
+                <span class="badge-rent">Disewa</span>
+              </div>
+
+              <div class="card-body">
+                <h3>Daihatsu Xenia 2023</h3>
+
+                <div class="rating">
+                  <span class="stars">★★★★★</span>
+                  <span class="rate">4.9</span>
+                  <span class="review">(60 ulasan)</span>
+                </div>
+
+                <p class="spec">Manual · 7 Kursi</p>
+                <div class="price">
+                  <span class="mulai">Mulai dari</span>
+                  <span class="harga">Rp 300k/hari</span>
+                </div>
+
+                <div class="card-btn">
+                  <a href="detail3.html" class="btn-card">Lihat Detail</a>
+                  <a href="#" class="btn-card-rent">Booking</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
     <!-- FOOTER -->
     <footer class="footer">
-      <p>© 2026 Rental Mobil. All rights reserved.</p>
+      <div class="footer_top">
+        <div class="footer_inner">
+          <div class="footer_brand">
+            <h2 class="brand-name">Aflah Jaya Rental</h2>
+            <p class="brand-desc">
+              Layanan rental mobil premium yang mengutamakan kenyamanan,
+              keamanan, dan kemudahan untuk setiap perjalanan Anda.
+            </p>
+            <div class="social-links">
+              <img
+                class="social-btn"
+                src="assets/icon/instagram.svg"
+                alt="logo instagram"
+              />
+              <img
+                class="social-btn"
+                src="assets/icon/facebook.svg"
+                alt="logo facebook"
+              />
+              <img
+                class="social-btn"
+                src="assets/icon/tiktok.svg"
+                alt="logo TikTok"
+              />
+            </div>
+          </div>
+
+          <div class="footer_col">
+            <h3 class="col-title">Layanan</h3>
+            <ul class="col-links">
+              <li><a href="#">Katalog Mobil</a></li>
+              <li><a href="#">Sewa Harian</a></li>
+              <li><a href="#">Sewa Mingguan</a></li>
+              <li><a href="#">Sewa Bulanan</a></li>
+              <li><a href="#">Dengan sopir</a></li>
+              <li><a href="#">Wisata Bandung</a></li>
+            </ul>
+          </div>
+
+          <div class="footer_col">
+            <h3 class="col-title">Akun & Pesanan</h3>
+            <ul class="col-links">
+              <li><a href="#">Cek Riwayat Booking</a></li>
+              <li><a href="#">Cara Pemesanan</a></li>
+            </ul>
+          </div>
+
+          <div class="footer_col">
+            <h3 class="col-title">Bantuan</h3>
+            <ul class="col-links">
+              <li><a href="#">Hubungi Kami</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer_bottom">
+        <div class="footer_bottom-inner">
+          <p class="copyright">© 2026 AJrent. Seluruh hak cipta dilindungi.</p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

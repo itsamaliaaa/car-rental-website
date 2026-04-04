@@ -1,0 +1,392 @@
+.main {
+  width: 95%;
+  margin: 3%;
+}
+
+.availability {
+  width: 100%;
+}
+
+.availability_card {
+  background-color: #f3f4f6;
+  border-radius: 14px;
+  padding: 28px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.availability_title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #111827;
+  letter-spacing: -0.01em;
+}
+
+.availability_form {
+  display: flex;
+  align-items: flex-end;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.form_group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form_group-label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 4px;
+}
+
+.form_fields {
+  display: flex;
+  gap: 30px;
+  align-items: flex-end;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 220px;
+}
+
+.field-sm {
+  min-width: 150px;
+}
+
+.field_label {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #6b7280;
+}
+
+.field_input-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.field_input {
+  width: 100%;
+  height: 42px;
+  border: 1.5px solid #d1d5db;
+  border-radius: 8px;
+  padding: 0 12px 0 12px;
+  font-family: "Inter";
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #374151;
+  background-color: #ffffff;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.field_input::placeholder {
+  color: #9ca3af;
+}
+
+.field_input:focus {
+  border-color: #1a2e5a;
+  box-shadow: 0 0 0 3px rgba(26, 46, 90, 0.1);
+}
+
+.form_action {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.btn-cek {
+  height: 42px;
+  width: 160px;
+  margin-bottom: 0;
+  align-self: flex-end;
+  background-color: #0b1f67;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-cek:hover {
+  background-color: #142347;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(26, 46, 90, 0.3);
+}
+
+.btn-cek:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(26, 46, 90, 0.2);
+}
+
+.search {
+  width: 100%;
+  margin: 30px 0 20px;
+}
+
+.field_search {
+  width: 100%;
+}
+
+#search {
+  width: 100%;
+  height: 42px;
+  border: 1.5px solid #d1d5db;
+  border-radius: 8px;
+  padding: 0 16px;
+  font-family: "Inter";
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #374151;
+  background-color: #ffffff;
+}
+
+#search::placeholder {
+  color: #9ca3af;
+}
+
+.car-catalog {
+  height: auto;
+}
+
+.car-catalog h2 {
+  color: #08174d;
+}
+
+.armada {
+  padding: 40px 20px;
+}
+
+.armada-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.armada-list {
+  display: flex;
+  gap: 111px;
+}
+
+.car-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 344px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding-bottom: 16px;
+  border: 1px solid transparent;
+  transition: all 0.25s ease;
+}
+
+.car-card:hover {
+  border: 1px solid #08174d;
+}
+
+.card-image {
+  position: relative;
+}
+
+.card-image img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #6dc742;
+  color: white;
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 100px;
+}
+
+.badge-rent {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #cd2f4b;
+  color: white;
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 100px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-body h3 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.rating {
+  font-size: 0.875rem;
+  margin-bottom: 6px;
+  color: #545454;
+}
+
+.stars {
+  color: #facc15;
+}
+
+.rate {
+  margin-left: 6px;
+  font-weight: 500;
+}
+
+.review {
+  color: #b5b5b5;
+  margin-left: 4px;
+}
+
+.spec {
+  font-size: 0.875rem;
+  color: #b5b5b5;
+  margin-bottom: 10px;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  margin-bottom: 14px;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.mulai {
+  color: #b5b5b5;
+}
+
+.harga {
+  font-weight: 600;
+}
+
+.card-btn {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-card {
+  flex: 1;
+  text-align: center;
+  background: #0b1f67;
+  color: white;
+  padding: 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.btn-card-rent {
+  flex: 1;
+  text-align: center;
+  background: #e7e9f2;
+  color: white;
+  padding: 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.btn-card:hover {
+  background-color: #0e2781;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 1024px) {
+  .armada-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .armada-list {
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .car-card {
+    max-width: 48%;
+  }
+}
+
+@media (max-width: 768px) {
+  .availability_card {
+    padding: 24px 20px;
+  }
+
+  .availability_form {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+  }
+
+  .form_fields {
+    flex-wrap: wrap;
+  }
+
+  .field {
+    min-width: 140px;
+    flex: 1;
+  }
+
+  .field-sm {
+    min-width: 100px;
+  }
+
+  .form_action {
+    width: 100%;
+  }
+
+  .btn-cek {
+    width: 100%;
+  }
+
+  .armada {
+    padding: 60px 5%;
+  }
+
+  .armada-list {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .car-card {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-body {
+    padding: 16px;
+  }
+
+  .card-image img {
+    height: 150px;
+  }
+
+  .btn-card {
+    padding: 12px;
+    font-size: 0.8rem;
+  }
+}
