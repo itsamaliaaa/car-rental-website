@@ -1,41 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rental Mobil</title>
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/nav-adm.css" />
-    <link rel="stylesheet" href="../css/footer.css" />
-  </head>
 
-  <body>
-    <div class="admin-layout">
-      <!-- SIDEBAR -->
-      <nav class="navbar-admin">
-        <h1 class="logo">logo</h1>
-        <ul class="nav-menu">
-          <li><a href="dashboard.html">Beranda</a></li>
-          <li><a href="mobil.html">Manajemen Mobil</a></li>
-          <li><a href="booking.html">Manajemen Booking</a></li>
-          <li><a href="review.html">Manajemen Review</a></li>
-          <li><a href="konten.html">Manajemen Konten</a></li>
-        </ul>
-      </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rental Mobil</title>
+  <link rel="stylesheet" href="../css/nav-adm.css" />
+</head>
 
-      <!-- KONTEN KANAN -->
-      <div class="admin-main">
-        <main class="admin-content">
-          <section class="hero">
-            <h2>Dashboard</h2>
-          </section>
-        </main>
+<body>
+  <!-- sidebar -->
+  <div class="sidebar-admin">
+    <div class="sidebar-container">
+      <a href="dashboard.html" class="menu-item active">
+        <img src="../assets/icon/dashboard.svg" alt="Icon" class="menu-icon">
+        <p>Dashboard</p>
+      </a>
 
-        <footer class="footer">
-          <p>© 2026 Rental Mobil. All rights reserved.</p>
-        </footer>
-      </div>
+      <a href="mobil.html" class="menu-item">
+        <img src="../assets/icon/mobil.svg" alt="Icon" class="menu-icon">
+        <p>Manajemen Mobil</p>
+      </a>
+
+      <a href="booking.html" class="menu-item">
+        <img src="../assets/icon/elements.svg" alt="Icon" class="menu-icon">
+        <p>Manajemen Booking</p>
+      </a>
+
+      <a href="review.html" class="menu-item">
+        <img src="../assets/icon/review.svg" alt="Icon" class="menu-icon">
+        <p>Moderasi Review</p>
+      </a>
     </div>
-  </body>
+
+    <div class="footer-sidebar">
+      <div class="line"></div>
+      <a href="login.html" class="menu-item">
+        <img src="../assets/icon/logout-04.svg" alt="Icon" class="menu-icon">
+        <p style="color: #cd2f4b;">Logout</p>
+      </a>
+    </div>
+  </div>
+
+  <!-- navbar -->
+  <nav class="navbar-admin">
+      <img src="../assets/images/logo.svg" alt="Aflah Jaya Rental">
+
+    <div class="profile-admin">
+      <p>Admin</p>
+      <img src="../assets/images/Rectangle 1.png" alt="Profile" class="foto-admin">
+    </div>
+  </nav>
+
+</body>
+
 </html>
