@@ -4,111 +4,114 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
+    <link rel="stylesheet" href="../css/admin/dashboard.css" />
   </head>
   <body>
-    <!-- Sidebar -->
-    <aside>
-      <div class="">Aflah Jaya Rental</div>
-      <nav class="">
-        <a href="#" class="">Dashboard</a>
-        <a href="#" class="">Manajemen Mobil</a>
-        <a href="#" class="">Manajemen Booking</a>
-        <a href="#" class="">Moderasi Review</a>
-      </nav>
-      <div class="">Logout</div>
-    </aside>
+    <div class="layout">
+      <!-- Sidebar -->
+      <aside>
+        <div id="brand">Aflah Jaya Rental</div>
+        <nav id="navmain">
+          <a href="./dashboard.html" class="navopt active">Dashboard</a>
+          <a href="./mobil.html" class="navopt">Manajemen Mobil</a>
+          <a href="./booking.html" class="navopt">Manajemen Booking</a>
+          <a href="./review.html" class="navopt">Moderasi Review</a>
+        </nav>
+        <div id="logout">Logout</div>
+      </aside>
 
-    <!-- Main Content -->
-    <main>
-      <!-- Header -->
-      <div class="header">
-        <h1 class="">Selamat datang, Admin!</h1>
-        <div class="">Admin</div>
-      </div>
-
-      <!-- Cards -->
-      <div class="cards">
-        <div class="card">
-          <p class="">Total Pendapatan Hari Ini</p>
-          <h2 class="">Rp 4,8 jt</h2>
-        </div>
-        <div class="card">
-          <p class="">Total Pendapatan Bulan Ini</p>
-          <h2 class="">Rp 48,7 jt</h2>
-        </div>
-        <div class="card">
-          <p class="">Total Pendapatan Keseluruhan</p>
-          <h2 class="">Rp 187 jt</h2>
-        </div>
-        <div class="card">
-          <p class="">Jumlah Transaksi Berhasil</p>
-          <h2 class="">248</h2>
-        </div>
-      </div>
-
-      <!-- Filter Section -->
-      <div class="filter">
-        <div class="">
-          <h2 class="">Laporan Total Pendapatan</h2>
-          <button class="">Terapkan Filter</button>
+      <!-- Main Content -->
+      <main>
+        <!-- Header -->
+        <div id="header">
+          <h1 class="welcome">Selamat datang, Admin!</h1>
+          <div class="status">Admin</div>
         </div>
 
-        <div class="">
-          <input type="date" class="" />
-          <input type="date" class="" />
-          <select class="">
-            <option>Mei</option>
-          </select>
-          <select class="">
-            <option>2024</option>
-          </select>
-        </div>
-
-        <div class="">
-          <div>
-            <p>Total Pendapatan</p>
-            <strong>Rp 20.757.443</strong>
+        <!-- Cards -->
+        <div id="cards">
+          <div class="card">
+            <p class="cardtitle">Total Pendapatan Hari Ini</p>
+            <h2 class="harga">Rp 4,8 jt</h2>
           </div>
-          <div>
-            <p>Jumlah Transaksi</p>
-            <strong>22</strong>
+          <div class="card">
+            <p class="cardtitle">Total Pendapatan Bulan Ini</p>
+            <h2 class="harga">Rp 48,7 jt</h2>
           </div>
-          <div>
-            <p>Rata-rata per Transaksi</p>
-            <strong>Rp 943.515</strong>
+          <div class="card">
+            <p class="cardtitle">Total Pendapatan Keseluruhan</p>
+            <h2 class="harga">Rp 187 jt</h2>
           </div>
-          <div>
-            <p>Periode</p>
-            <strong>2024-09-12 s/d 2024-12-23</strong>
-          </div>
-        </div>
-      </div>
-
-      <!-- Bottom Section -->
-      <div class="botsection">
-        <!-- Top Cars -->
-        <div class="topcars">
-          <h2 class="">Top 5 Mobil Paling Laris</h2>
-          <div class="">
-            <span>1. Toyota Avanza 2023</span>
-            <span class="">30x disewa</span>
+          <div class="card">
+            <p class="cardtitle">Jumlah Transaksi Berhasil</p>
+            <h2 class="harga">248</h2>
           </div>
         </div>
 
-        <!-- Chart Placeholder -->
-        <div class="chart">
-          <h2 class="">Jumlah Penyewaan Per Mobil</h2>
-          <div class="">
-            <div class="">
-              <span>Toyota Avanza 2023</span>
-              <span>(10)</span>
+        <!-- Filter Section -->
+        <div id="filter-box">
+          <div class="filter-head">
+            <h2 class="filtertitle">Laporan Total Pendapatan</h2>
+            <button class="filterbtn">Terapkan Filter</button>
+          </div>
+
+          <div class="filters">
+            <input type="date" class="filterdate" />
+            <input type="date" class="filterdate" />
+            <select class="filtermonth">
+              <option>Mei</option>
+            </select>
+            <select class="filteryear">
+              <option>2024</option>
+            </select>
+          </div>
+
+          <div class="filter-summ">
+            <div>
+              <p>Total Pendapatan</p>
+              <strong>Rp 20.757.443</strong>
             </div>
-            <div class="">
-              <div class="" style="width: 80%"></div>
+            <div>
+              <p>Jumlah Transaksi</p>
+              <strong>22</strong>
+            </div>
+            <div>
+              <p>Rata-rata per Transaksi</p>
+              <strong>Rp 943.515</strong>
+            </div>
+            <div>
+              <p>Periode</p>
+              <strong>2024-09-12 s/d 2024-12-23</strong>
             </div>
           </div>
         </div>
-      </div>
-    </main>
+
+        <!-- Bottom Section -->
+        <div id="botsection">
+          <!-- Top Cars -->
+          <div class="topcars">
+            <h2 class="">Top 5 Mobil Paling Laris</h2>
+            <div class="">
+              <span>1. Toyota Avanza 2023</span>
+              <span class="">30x disewa</span>
+            </div>
+          </div>
+
+          <!-- Chart Placeholder -->
+          <div class="chart">
+            <h2>Jumlah Penyewaan Per Mobil</h2>
+            <div class="bar-item">
+              <div class="bar-label">
+                <span>Toyota Avanza 2023</span>
+                <span>(10)</span>
+              </div>
+              <div class="bar">
+                <div class="fill" style="width: 80%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
   </body>
 </html>
