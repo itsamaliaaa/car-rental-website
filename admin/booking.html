@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rental Mobil</title>
   <link rel="stylesheet" href="../css/nav-adm.css" />
+  <link rel="stylesheet" href="../css/admin/booking.css" />
 </head>
 
 <body>
@@ -45,13 +46,88 @@
 
   <!-- navbar -->
   <nav class="navbar-admin">
-      <img src="../assets/images/logo.svg" alt="Aflah Jaya Rental">
+    <img src="../assets/images/logo.svg" alt="Aflah Jaya Rental">
 
     <div class="profile-admin">
       <p>Admin</p>
       <img src="../assets/images/Rectangle 1.png" alt="Profile" class="foto-admin">
     </div>
   </nav>
+
+  <!-- manajemen booking -->
+  <div class="manajemen-booking">
+    <div class="manajemen-booking-card">
+
+      <h1 class="judul">Manajemen Booking</h1>
+
+      <div class="search-container">
+          <img class="search-icon" alt="search" src="../assets/icon/search.svg" />
+          <input type="text" class="search-input" placeholder="Cari User" />
+      </div>
+
+      <div class="table-container">
+        <div class="table-row table-header">
+          <div class="nama">Nama Penyewa</div>
+          <div class="unit">Tipe Unit</div>
+          <div class="tanggal">Tanggal Pengambilan</div>
+          <div class="tanggal">Tanggal Pengembalian</div>
+          <div class="status">Status</div>
+          <div class="aksi">Aksi</div>
+        </div>
+
+        <div class="table-row table-content">
+          <div class="nama">Dewi Lestari</div>
+          <div class="unit">Mitsubishi Pajero 2024</div>
+          <div class="tanggal">16 April 2026</div>
+          <div class="tanggal">18 April 2026</div>
+          <div class="status">
+            <div class="pending">Pending</div>
+          </div>
+          <div class="aksi">
+            <a href="detail.html" class="detail">Lihat Detail</a>
+          </div>
+        </div>
+
+        <div class="table-row table-content">
+          <div class="nama">Andi Pratama</div>
+          <div class="unit">Honda Brio 2022</div>
+          <div class="tanggal">12 April 2026</div>
+          <div class="tanggal">15 April 2026</div>
+          <div class="status">
+            <div class="confirmed">Confirmed</div>
+          </div>
+          <div class="aksi">
+            <a href="detail.html" class="detail">Lihat Detail</a>
+          </div>
+        </div>
+
+        <div class="table-row table-content">
+          <div class="nama">Budi Setiawan</div>
+          <div class="unit">Toyota Avanza 2023</div>
+          <div class="tanggal">10 April 2026</div>
+          <div class="tanggal">11 April 2026</div>
+          <div class="status">
+            <div class="success">Success</div>
+          </div>
+          <div class="aksi">
+            <a href="detail.html" class="detail">Lihat Detail</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="frame-halaman">
+        <div class="halaman-container">
+          <div class="halaman-item">&lt;</div>
+          <div class="halaman-item active">1</div>
+          <div class="halaman-item">2</div>
+          <div class="halaman-item">...</div>
+          <div class="halaman-item">7</div>
+          <div class="halaman-item">&gt;</div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
 
