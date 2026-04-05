@@ -284,3 +284,16 @@
 .ya:hover {
     background-color: #6aa845;
 }
+
+/* responsive */
+
+@media (max-width: 660px) {
+    .manajemen-mobil {
+        margin-left: 0 ;
+        padding: 2rem;
+    }
+
+    .manajemen-mobil-card {
+        padding: 3rem;
+    }
+}

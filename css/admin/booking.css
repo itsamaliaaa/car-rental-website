@@ -201,3 +201,16 @@
     background-color: #0e2781;
     color: #ffffff;
 }
+
+/* responsive */
+
+@media (max-width: 660px) {
+    .manajemen-booking {
+        margin-left: 0 ;
+        padding: 2rem;
+    }
+
+    .manajemen-booking-card {
+        padding: 3rem;
+    }
+}

@@ -218,3 +218,16 @@
   background-color: #0e2781;
   transform: translateY(-1px);
 }
+
+/* responsive */
+
+@media (max-width: 660px) {
+    .edit-mobil {
+        margin-left: 0 ;
+        padding: 2rem;
+    }
+
+    .edit-mobil-card {
+        padding: 3rem;
+    }
+}

@@ -8,11 +8,13 @@
   <title>Rental Mobil</title>
   <link rel="stylesheet" href="../css/nav-adm.css" />
   <link rel="stylesheet" href="../css/admin/mobil.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 </head>
 
 <body>
   <!-- sidebar -->
-  <div class="sidebar-admin">
+  <div class="sidebar-admin" id="sidebar-mobile">
+    <a href="#" class="close"> X </a>
     <div class="sidebar-container">
       <a href="dashboard.html" class="menu-item">
         <img src="../assets/icon/dashboard.svg" alt="Icon" class="menu-icon">
@@ -45,13 +47,13 @@
   </div>
 
   <!-- navbar -->
-  <nav class="navbar-admin">
+   <nav class="navbar-admin">
     <img src="../assets/images/logo.svg" alt="Aflah Jaya Rental">
 
-    <div class="profile-admin">
+    <a href="#sidebar-mobile" class="profile-admin" style="text-decoration: none;">
       <p>Admin</p>
       <img src="../assets/images/Rectangle 1.png" alt="Profile" class="foto-admin">
-    </div>
+    </a>
   </nav>
 
   <!-- manajemen mobil -->
@@ -175,15 +177,15 @@
     </div>
   </div>
 
-   <div id="konfirmasi-overlay" class="background-overlay">
-        <div class="card-overlay">
-            <h2>Apakah Kamu Yakin Ingin Menghapus Mobil Ini ?</h2>
-            <div class="tombol-container">
-                <a href="#" class="ya">Ya</a>
-                <a href="#" class="tidak">Tidak</a>
-            </div>
-        </div>
+  <div id="konfirmasi-overlay" class="background-overlay">
+    <div class="card-overlay">
+      <h2>Apakah Kamu Yakin Ingin Menghapus Mobil Ini ?</h2>
+      <div class="tombol-container">
+        <a href="#" class="ya">Ya</a>
+        <a href="#" class="tidak">Tidak</a>
+      </div>
     </div>
+  </div>
 
 </body>
 

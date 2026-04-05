@@ -216,3 +216,16 @@
 .ya:hover {
     background-color: #6aa845;
 }
+
+/* responsive */
+
+@media (max-width: 660px) {
+    .lihat-detail {
+        margin-left: 0 ;
+        padding: 2rem;
+    }
+
+    .lihat-detail-card {
+        padding: 3rem;
+    }
+}
