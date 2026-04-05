@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rental Mobil</title>
+    <link rel="stylesheet" href="../css/nav-adm.css" />
+    <link rel="stylesheet" href="../css/admin/edit-mobil.css" />
+</head>
+
+<body>
+    <!-- sidebar -->
+    <div class="sidebar-admin">
+        <div class="sidebar-container">
+            <a href="dashboard.html" class="menu-item">
+                <img src="../assets/icon/dashboard.svg" alt="Icon" class="menu-icon">
+                <p>Dashboard</p>
+            </a>
+
+            <a href="mobil.html" class="menu-item active">
+                <img src="../assets/icon/mobil.svg" alt="Icon" class="menu-icon">
+                <p>Manajemen Mobil</p>
+            </a>
+
+            <a href="booking.html" class="menu-item">
+                <img src="../assets/icon/elements.svg" alt="Icon" class="menu-icon">
+                <p>Manajemen Booking</p>
+            </a>
+
+            <a href="review.html" class="menu-item">
+                <img src="../assets/icon/review.svg" alt="Icon" class="menu-icon">
+                <p>Moderasi Review</p>
+            </a>
+        </div>
+
+        <div class="footer-sidebar">
+            <div class="line"></div>
+            <a href="login.html" class="menu-item">
+                <img src="../assets/icon/logout-04.svg" alt="Icon" class="menu-icon">
+                <p style="color: #cd2f4b;">Logout</p>
+            </a>
+        </div>
+    </div>
+
+    <!-- navbar -->
+    <nav class="navbar-admin">
+        <img src="../assets/images/logo.svg" alt="Aflah Jaya Rental">
+
+        <div class="profile-admin">
+            <p>Admin</p>
+            <img src="../assets/images/Rectangle 1.png" alt="Profile" class="foto-admin">
+        </div>
+    </nav>
+
+    <!-- edit-mobil -->
+    <div class="edit-mobil">
+        <div class="edit-mobil-card">
+            <h1 class="judul">Edit Mobil</h1>
+
+            <div class="edit-container">
+                <div class="left-column">
+                    <div class="input-container">
+                        <label>Nama *</label>
+                        <input type="text" class="input custom-file-upload">
+                    </div>
+                    <div class="input-container">
+                        <label>Foto *</label>
+                        <input type="file" class="input custom-file-input">
+                    </div>
+                    <div class="input-container">
+                        <label>Detail *</label>
+                        <input type="text" class="input">
+                    </div>
+
+                    <div class="input-container">
+                        <label>Sewa Dasar (per hari) *</label>
+                        <input type="text" class="input">
+                        </input>
+                    </div>
+                    <div class="input-container">
+                        <label>Bahan Bakar *</label>
+                        <input type="text" class="input">
+                        </input>
+                    </div>
+                    <div class="input-container">
+                        <label>Asuransi Kendaraan *</label>
+                        <input type="text" class="input">
+                    </div>
+                </div>
+
+                <div class="center-column">
+                    <div class="input-container">
+                        <label>Driver (opsional)</label>
+                        <input type="text" class="input">
+                        </input>
+                    </div>
+                    <div class="input-container">
+                        <label>Biaya Over Kilometer *</label>
+                        <input type="text" class="input">
+                        </input>
+                    </div>
+
+                    <div class="input-container">
+                        <label>Driver (opsional)</label>
+                        <input type="text" class="input">
+                        </input>
+                    </div>
+                    <div class="input-container">
+                        <label>Total</label>
+                        <input type="text" class="input">
+                        </input>
+                    </div>
+                    <div class="input-container">
+                        <label>Total (dengan driver, 1 hari)</label>
+                        <input type="text" class="input">
+                    </div>
+                    <div class="input-container">
+                        <label>Status</label>
+                        <div class="select-container">
+                            <select class="select-custom">
+                                <option value="available">Available</option>
+                                <option value="booked">Booked</option>
+                            </select>
+                            <img src="../assets/icon/Vector.svg" class="ikon-select-custom" alt="icon">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right-column">
+                    <div class="input-container">
+                        <label>Prasayarat Kendaraan *</label>
+                        <input type="text" class="input input-besar">
+                        </input>
+                    </div>
+                    <div class="input-container">
+                        <label>Syarat & Ketentuan Umum *</label>
+                        <input type="text" class="input input-besar">
+                        </input>
+                    </div>
+                </div>
+
+            </div>
+            <a href="#konfirmasi-overlay" class="edit">Edit</a>
+        </div>
+    </div>
+
+    <div id="konfirmasi-overlay" class="background-overlay">
+        <div class="card-overlay">
+            <h2>Apakah Kamu Yakin Ingin Mengedit Mobil Ini ?</h2>
+            <div class="tombol-container">
+                <a href="mobil.html" class="ya">Ya</a>
+                <a href="#" class="tidak">Tidak</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

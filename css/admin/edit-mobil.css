@@ -1,15 +1,15 @@
-/* lihat detail */
+/* edit-mobil */
 
-.lihat-detail {
+.edit-mobil {
     margin-left: 18rem;
-    padding: 8.5rem 4rem 2.5rem 4rem;
+    padding: 7rem 4rem 2.5rem 4rem;
     display: flex;
     flex-direction: column;
     background-color: #f4f7fe;
     box-sizing: border-box;
 }
 
-.lihat-detail-card {
+.edit-mobil-card {
     width: 100%;
     margin: 0 auto;
     padding: 2.5rem;
@@ -26,18 +26,19 @@
     font-size: 2.5rem;
     font-weight: 700;
     color: #0b1f67;
+    margin-bottom: 1.1rem;
 }
 
-.detail-container {
+.edit-container {
     display: grid;
-    grid-template-columns: 1.6fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     align-items: start;
 }
 
 /* form */
 
-.input {
+.input-container {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -45,72 +46,38 @@
 }
 
 .input label {
-    color: #c1c1c1;
+    color: #545454;
     font-size: 0.875rem;
 }
 
-.info{
+.input {
     padding: 0.75rem 1rem;
-    border: 0.063rem solid #c1c1c1;
+    border: 0.063rem solid #545454;
     border-radius: 0.5rem;
     background-color: #fff;
     font-size: 1rem;
-    color: #c1c1c1; /* Warna teks sesuai permintaan */
+    color: #545454;
     min-height: 1.25rem;
     display: flex;
     align-items: center;
     box-sizing: border-box;
 }
 
-.catatan {
+.input-besar {
     align-items: flex-start;
-    min-height: 9.5rem;
+    min-height: 13.65rem;
     line-height: 1.5;
 }
 
-.kode-booking {
-    background-color: #c1c1c1;
-    color: #ffffff;
-}
-
-.gambar {
-    height: 9.375rem;
-    background: #d9d9d9;
-    border-radius: 0.5rem;
+/* Choose File */
+.custom-file-input {
+    padding: 0;
+    cursor: pointer;
+    color: #545454;
+    font-size: 0.875rem;
+    overflow: hidden;
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 0.938rem;
-    color: #ffffff;
-}
-
-/* Tombol */
-.download {
-    width: 100%;
-    padding: 0.875rem;
-    background: #0b1f67;
-    color: #ffffff;
-    border: none;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    margin-bottom: 1.25rem;
-}
-
-.konfirmasi {
-    text-decoration: none;
-    text-align: center;
-    width: 100%;
-    padding: 0.875rem;
-    background: #0b1f67;
-    color: #ffffff;
-    border: none;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    margin-bottom: 0;
-}
-
-.download:hover, .konfirmasi:hover {
-    background: #152c7e;
 }
 
 /* select */
@@ -125,7 +92,7 @@
 .select-custom {
     width: 100% ;
     padding: 0.75rem 2.5rem 0.75rem 1rem ; 
-    border: 1px solid #c1c1c1 ;
+    border: 1px solid #545454 ;
     border-radius: 0.5rem ;
     background-color: #ffffff ;
     font-size: 1rem ;
@@ -148,6 +115,7 @@
     top: 50% ;
     margin-top: -0.40rem ;
 }
+
 
 /* Overlay */
 .background-overlay {
@@ -211,4 +179,40 @@
 
 .ya:hover {
     background-color: #6aa845;
+}
+
+.custom-file-input::file-selector-button {
+    background-color: #e0e0e0;
+    color: #545454;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-right: 1px solid #c1c1c1;
+    border-radius: 0.5rem 0 0 0.5rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.custom-file-input::file-selector-button:hover {
+    background-color: #d1d1d1;
+}
+
+.edit {
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    padding: 0.875rem;
+    background: #0b1f67;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-bottom: 0;
+    box-sizing: border-box;
+}
+
+.edit:hover {
+    background: #152c7e;
 }
