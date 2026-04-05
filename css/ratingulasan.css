@@ -299,13 +299,13 @@
   }
 
   .car-info {
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
   }
 
   .car-info img {
     width: 100%;
-    max-width: 200px;
+    max-width: 100px;
   }
 
   .rating-content {
@@ -319,6 +319,7 @@
 
   .rating-bars {
     grid-template-columns: 1fr;
+    grid-auto-flow: row;
     width: 100%;
   }
 
