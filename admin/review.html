@@ -6,61 +6,52 @@
     <title>Moderasi Review</title>
     <link rel="stylesheet" href="../css/nav-adm.css" />
     <link rel="stylesheet" href="../css/admin/review.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <!-- Sidebar -->
-    <div class="sidebar-admin">
-      <div class="sidebar-container">
-        <a href="dashboard.html" class="menu-item">
-          <img
-            src="../assets/icon/dashboard.svg"
-            alt="Icon"
-            class="menu-icon"
-          />
-          <p>Dashboard</p>
-        </a>
+  <!-- sidebar -->
+  <div class="sidebar-admin" id="sidebar-mobile">
+    <a href="#" class="close"> X </a>
+    <div class="sidebar-container">
+      <a href="dashboard.html" class="menu-item">
+        <img src="../assets/icon/dashboard.svg" alt="Icon" class="menu-icon">
+        <p>Dashboard</p>
+      </a>
 
-        <a href="mobil.html" class="menu-item">
-          <img src="../assets/icon/mobil.svg" alt="Icon" class="menu-icon" />
-          <p>Manajemen Mobil</p>
-        </a>
+      <a href="mobil.html" class="menu-item">
+        <img src="../assets/icon/mobil.svg" alt="Icon" class="menu-icon">
+        <p>Manajemen Mobil</p>
+      </a>
 
-        <a href="booking.html" class="menu-item">
-          <img src="../assets/icon/elements.svg" alt="Icon" class="menu-icon" />
-          <p>Manajemen Booking</p>
-        </a>
+      <a href="booking.html" class="menu-item">
+        <img src="../assets/icon/elements.svg" alt="Icon" class="menu-icon">
+        <p>Manajemen Booking</p>
+      </a>
 
-        <a href="review.html" class="menu-item active">
-          <img src="../assets/icon/review.svg" alt="Icon" class="menu-icon" />
-          <p>Moderasi Review</p>
-        </a>
-      </div>
-
-      <div class="footer-sidebar">
-        <div class="line"></div>
-        <a href="login.html" class="menu-item">
-          <img
-            src="../assets/icon/logout-04.svg"
-            alt="Icon"
-            class="menu-icon"
-          />
-          <p style="color: #cd2f4b">Logout</p>
-        </a>
-      </div>
+      <a href="review.html" class="menu-item active">
+        <img src="../assets/icon/review.svg" alt="Icon" class="menu-icon">
+        <p>Moderasi Review</p>
+      </a>
     </div>
 
-    <!-- Navbar -->
-    <nav class="navbar-admin">
-      <img src="../assets/images/logo.svg" alt="Aflah Jaya Rental" />
-      <div class="profile-admin">
-        <p>Admin</p>
-        <img
-          src="../assets/images/Rectangle 1.png"
-          alt="Profile"
-          class="foto-admin"
-        />
-      </div>
-    </nav>
+    <div class="footer-sidebar">
+      <div class="line"></div>
+      <a href="login.html" class="menu-item">
+        <img src="../assets/icon/logout-04.svg" alt="Icon" class="menu-icon">
+        <p style="color: #cd2f4b;">Logout</p>
+      </a>
+    </div>
+  </div>
+
+  <!-- navbar -->
+   <nav class="navbar-admin">
+    <img src="../assets/images/logo.svg" alt="Aflah Jaya Rental">
+
+    <a href="#sidebar-mobile" class="profile-admin" style="text-decoration: none;">
+      <p>Admin</p>
+      <img src="../assets/images/Rectangle 1.png" alt="Profile" class="foto-admin">
+    </a>
+  </nav>
 
     <!-- Moderasi Review -->
     <div class="manajemen-review">
