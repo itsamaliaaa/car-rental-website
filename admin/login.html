@@ -6,28 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rental Mobil</title>
     <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/admin/login.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-
     <!-- NAVBAR -->
-      <nav class="navbar-admin">
-        <img src="../assets/images/logo.svg" alt="Aflah Jaya Rental">
-        <a href="#" class="login">Login</a>
-      </nav>
+    <nav class="navbar-admin">
+      <img src="../assets/images/logo.svg" alt="Aflah Jaya Rental" />
+      <a href="#" class="login">Login</a>
+    </nav>
 
     <!-- MAIN -->
     <main>
       <section class="login-container">
-
         <!-- KIRI -->
         <div class="login-left">
           <p class="subtitle">ADMIN PORTAL</p>
           <h2>PANEL MANAJEMEN</h2>
           <p class="desc">
-            Kendali penuh di satu tempat. Kelola armada, proses booking, 
-            verifikasi pembayaran, dan pantau pendapatan bisnis rental Anda 
+            Kendali penuh di satu tempat. Kelola armada, proses booking,
+            verifikasi pembayaran, dan pantau pendapatan bisnis rental Anda
             secara real-time.
           </p>
         </div>
@@ -40,23 +42,21 @@
               Masuk menggunakan kredensial admin yang telah ditetapkan.
             </p>
 
-            <form>
+            <form action="dashboard.html">
               <label>Email</label>
               <input type="email" placeholder="Masukkan Email" />
 
               <label>Password</label>
               <div class="password-wrapper">
                 <input type="password" placeholder="Masukkan Password" />
-                <img src="../assets/icon/Eye.svg" class="eye-icon">
+                <img src="../assets/icon/Eye.svg" class="eye-icon" />
               </div>
 
               <button type="submit">Masuk ke Dashboard</button>
             </form>
           </div>
         </div>
-
       </section>
     </main>
-
-   </body>
+  </body>
 </html>

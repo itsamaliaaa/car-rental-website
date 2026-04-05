@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cek Booking</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/riwayatBooking.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="navbar">
+      <div class="navbar_inner">
+        <div class="navbar_logo">
+          <img
+            class="logo"
+            src="assets/images/logo.svg"
+            alt="Logo Rental Mobil Aflah Jaya"
+          />
+        </div>
+        <nav class="navbar_nav">
+          <a href="index.html" class="nav-link">Beranda</a>
+          <a href="katalog.html" class="nav-link">Katalog Mobil</a>
+          <a href="riwayatBooking.html" class="nav-link active">Cek Booking</a>
+        </nav>
+        <div class="navbar_cta">
+          <a href="katalog.html" class="btn-booking">Booking Sekarang</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <!-- Title -->
+      <section class="title">
+        <h1>Cek Riwayat Booking Anda</h1>
+        <p>Silakan masukkan email dan kode booking untuk melihat detail pemesanan Anda.</p>
+      </section>
+
+      <!-- Form -->
+      <section class="card">
+        <h3>Lihat Detail Booking</h3>
+        <div class="divider"></div> 
+        <div class="form-row">
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="Masukkan Email" />
+          </div>
+          <div class="form-group">
+            <label>Kode Booking</label>
+            <input type="text" placeholder="Masukkan Kode Booking" />
+          </div>
+          <button class="btn-primary">Cek Booking</button>
+        </div>
+      </section>
+
+      <!-- Detail -->
+      <section class="card">
+        <div class="card-header">
+          <div>
+            <h3>Detail Booking Anda</h3>
+            <p>Berikut informasi pemesanan Anda</p>
+          </div>
+          <span class="status success">Success</span>
+        </div>
+
+        <!-- Mobil info -->
+        <div class="booking-info">
+          <img src="assets/images/big-car.svg" class="car-card" alt="car" />
+          <div>
+            <p class="car-label">Nama Mobil:</p>
+            <p class="car-name">Toyota Avanza 2023</p>
+          </div>
+        </div>
+
+        <!-- Grid detail -->
+        <div class="grid">
+          <div>
+            <label>Kode Booking:</label>
+            <p>TRX12345</p>
+          </div>
+          <div>
+            <label>Nama Penyewa:</label>
+            <p>Budi Setiawan</p>
+          </div>
+          <div>
+            <label>Email:</label>
+            <p>budisetiawan@gmail.com</p>
+          </div>
+          <div>
+            <label>No Telepon:</label>
+            <p>+62 8999 0912</p>
+          </div>
+          <div>
+            <label>Tanggal Pengambilan:</label>
+            <p>10 April 2026</p>
+          </div>
+          <div>
+            <label>Tanggal Pengembalian:</label>
+            <p>12 April 2026</p>
+          </div>
+          <div>
+            <label>Waktu Pengambilan:</label>
+            <p>09.00</p>
+          </div>
+          <div>
+            <label>Waktu Pengembalian:</label>
+            <p>09.00</p>
+          </div>
+        </div>
+
+        <!-- Footer info -->
+        <div class="footer-info">
+          <div>
+            <label>Durasi:</label>
+            <p>2 Hari</p>
+          </div>
+          <div class="price">
+            <label>Total Harga:</label>
+            <p>Rp 1.100.000</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Review -->
+      <section class="review">
+        <h2>Perjalanan selesai! 🚗✨</h2>
+        <p>Gimana pengalaman kamu selama menggunakan mobil ini?</p>
+        <p>Ceritakan yuk, supaya kami bisa terus meningkatkan layanan kami.</p>
+
+        <div class="review-card">
+          <p class="center">Bagaimana Pengalamanmu?</p>
+
+          <div class="stars">★★★★★</div>
+
+          <div class="review-field">
+            <label>Komentar *</label>
+            <input type="text" placeholder="Masukkan komentar" />
+          </div>
+
+          <div class="review-field">
+            <label>Tambahkan Foto</label>
+            <input type="file" />
+          </div>
+
+          <button class="btn-primary">Kirim ulasan</button>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer_top">
+        <div class="footer_inner">
+          <div class="footer_brand">
+            <h2 class="brand-name">Aflah Jaya Rental</h2>
+            <p class="brand-desc">
+              Layanan rental mobil premium yang mengutamakan kenyamanan,
+              keamanan, dan kemudahan untuk setiap perjalanan Anda.
+            </p>
+            <div class="social-links">
+              <img class="social-btn" src="assets/icon/instagram.svg" alt="logo instagram" />
+              <img class="social-btn" src="assets/icon/facebook.svg" alt="logo facebook" />
+              <img class="social-btn" src="assets/icon/tiktok.svg" alt="logo TikTok" />
+            </div>
+          </div>
+
+          <div class="footer_col">
+            <h3 class="col-title">Layanan</h3>
+            <ul class="col-links">
+              <li><a href="#">Katalog Mobil</a></li>
+              <li><a href="#">Sewa Harian</a></li>
+              <li><a href="#">Sewa Mingguan</a></li>
+              <li><a href="#">Sewa Bulanan</a></li>
+              <li><a href="#">Dengan sopir</a></li>
+              <li><a href="#">Wisata Bandung</a></li>
+            </ul>
+          </div>
+
+          <div class="footer_col">
+            <h3 class="col-title">Akun & Pesanan</h3>
+            <ul class="col-links">
+              <li><a href="#">Cek Riwayat Booking</a></li>
+              <li><a href="#">Cara Pemesanan</a></li>
+            </ul>
+          </div>
+
+          <div class="footer_col">
+            <h3 class="col-title">Bantuan</h3>
+            <ul class="col-links">
+              <li><a href="#">Hubungi Kami</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer_bottom">
+        <div class="footer_bottom-inner">
+          <p class="copyright">© 2026 AJrent. Seluruh hak cipta dilindungi.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 60px; 
+  gap: 60px;
 }
 
 /* TEXT */
@@ -18,7 +18,7 @@
 .hero-text h1 {
   font-size: 3rem;
   font-weight: 700;
-  color: #08174D;
+  color: #08174d;
   line-height: 1.2;
   margin-bottom: 20px;
 }
@@ -32,7 +32,7 @@
 /* BUTTON */
 .btn-bookingsekarang {
   display: inline-block;
-  background: #0B1F67;
+  background: #0b1f67;
   color: white;
   padding: 20px 40px;
   border-radius: 8px;
@@ -42,15 +42,15 @@
 }
 
 .btn-bookingsekarang:hover {
-  background-color: #0E2781;
+  background-color: #0e2781;
   transform: translateY(-1px);
 }
 
 /* STATS */
 .hero-stats {
   display: flex;
-  justify-content: space-between; 
-  width: 100%; 
+  justify-content: space-between;
+  width: 100%;
   margin-top: 10px;
 }
 
@@ -105,7 +105,7 @@
 
 /* ARMADA */
 .armada {
-  background: #FBFBFB;
+  background: #fbfbfb;
   padding: 80px 8%;
 }
 
@@ -133,12 +133,12 @@
 
 .armada-header h2 {
   font-size: 1.75rem;
-  color: #08174D;
+  color: #08174d;
 }
 
 /* BUTTON */
 .btn-lihat {
-  background:#0B1F67;
+  background: #0b1f67;
   color: white;
   display: inline-flex;
   gap: 14px;
@@ -158,7 +158,7 @@
 }
 
 .btn-lihat:hover {
-  background-color: #0E2781;
+  background-color: #0e2781;
   transform: translateY(-1px);
 }
 
@@ -175,14 +175,14 @@
   overflow: hidden;
   width: 100%;
   max-width: 344px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   padding-bottom: 16px;
   border: 1px solid transparent;
   transition: all 0.25s ease;
 }
 
 .car-card:hover {
-  border: 1px solid #08174D;
+  border: 1px solid #08174d;
 }
 
 /* IMAGE */
@@ -201,7 +201,7 @@
   position: absolute;
   top: 12px;
   left: 12px;
-  background: #0E2781;
+  background: #0e2781;
   color: white;
   font-size: 0.75rem;
   padding: 4px 10px;
@@ -235,14 +235,14 @@
 }
 
 .review {
-  color: #B5B5B5;
+  color: #b5b5b5;
   margin-left: 4px;
 }
 
 /* SPEC */
 .spec {
   font-size: 0.875rem;
-  color: #B5B5B5;
+  color: #b5b5b5;
   margin-bottom: 10px;
 }
 
@@ -258,7 +258,7 @@
 }
 
 .mulai {
-  color: #B5B5B5;
+  color: #b5b5b5;
 }
 
 .harga {
@@ -274,7 +274,7 @@
 .btn-card {
   flex: 1;
   text-align: center;
-  background: #0B1F67;
+  background: #0b1f67;
   color: white;
   padding: 14px;
   border-radius: 8px;
@@ -284,7 +284,7 @@
 }
 
 .btn-card:hover {
-  background-color: #0E2781;
+  background-color: #0e2781;
   transform: translateY(-1px);
 }
 
@@ -350,13 +350,12 @@
   }
 }
 
-
 /* ============================================== */
 
 /* KEUNGGULAN */
 .keunggulan {
-  background-color: #FEFEFE;
-  padding: 80px 8%; 
+  background-color: #fefefe;
+  padding: 80px 8%;
   color: #0d1b4c;
 }
 
@@ -376,14 +375,14 @@
 
 .title {
   font-size: 1.75rem;
-  color: #08174D;
+  color: #08174d;
   font-weight: 700;
   margin-bottom: 16px;
   font-weight: 700;
 }
 
 .description {
-  font-size: 1rem; 
+  font-size: 1rem;
   color: #545454;
   margin-bottom: 48px;
   max-width: 700px;
@@ -399,10 +398,10 @@
 }
 
 .keunggulan .card {
-  background-color: #08174D;
+  background-color: #08174d;
   color: #fff;
-  padding: 32px 24px; 
-  border-radius: 16px; 
+  padding: 32px 24px;
+  border-radius: 16px;
   text-align: left;
   transition: all 0.3s ease;
   width: 100%;
@@ -415,14 +414,14 @@
 
 .card .icon {
   width: 48px;
-  height: 48px; 
-  background-color: #B4BCD8;
+  height: 48px;
+  background-color: #b4bcd8;
   color: #0d1b4c;
-  border-radius: 12px; 
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 24px; 
+  font-size: 24px;
   margin-bottom: 16px;
 }
 
@@ -433,15 +432,15 @@
 }
 
 .card h3 {
-  font-size: 1.125rem; 
+  font-size: 1.125rem;
   font-weight: 600;
   margin-bottom: 8px;
 }
 
 .card p {
-  font-size: 0.875rem; 
+  font-size: 0.875rem;
   line-height: 1.5;
-  color: #D9D9D9;
+  color: #d9d9d9;
 }
 
 /* RESPONSIVE */
@@ -493,7 +492,7 @@
 
 /* CARA PESAN */
 .cara-pesan {
-  background-color: #FBFBFB;
+  background-color: #fbfbfb;
   padding: 80px 8%;
   color: #0d1b4c;
 }
@@ -518,12 +517,12 @@
 }
 
 .description {
-  font-size: 1rem; 
+  font-size: 1rem;
   color: #545454;
   margin-bottom: 40px;
   max-width: 600px;
   margin-left: 0;
-  white-space: nowrap; 
+  white-space: nowrap;
 }
 
 /* TIMELINE */
@@ -647,7 +646,7 @@
 
 /* TESTIMONI */
 .testimoni {
-  background-color: #FEFEFE;
+  background-color: #fefefe;
   padding: 80px 4%;
   text-align: center;
 }
@@ -667,7 +666,7 @@
 
 .testimoni .title {
   font-size: 1.75rem;
-  color: #08174D;
+  color: #08174d;
   font-weight: 700;
   margin-bottom: 16px;
   font-weight: 700;
@@ -684,7 +683,7 @@
 
 /* CARD */
 .testimoni .card {
-  background-color: #08174D;
+  background-color: #08174d;
   color: white;
   padding: 28px;
   border-radius: 16px;
@@ -705,7 +704,7 @@
   font-size: 0.875rem;
   line-height: 1.6;
   margin-bottom: 24px;
-  color: #FEFEFE;
+  color: #fefefe;
 }
 
 /* DIVIDER */
@@ -809,7 +808,7 @@
 
 /* MAP */
 .lokasi {
-  background-color: #FBFBFB;
+  background-color: #fbfbfb;
   padding: 80px 8%;
 }
 
@@ -830,7 +829,7 @@
 .lokasi .title {
   font-size: 2rem;
   font-weight: 700;
-  color: #08174D;
+  color: #08174d;
   margin-bottom: 48px;
 }
 
@@ -859,7 +858,7 @@
 .icon-box {
   width: 52px;
   height: 52px;
-  background-color: #08174D;
+  background-color: #08174d;
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -875,7 +874,7 @@
 .text h3 {
   font-size: 1rem;
   font-weight: 600;
-  color: #050E2D;
+  color: #050e2d;
   margin-bottom: 6px;
 }
 
@@ -951,7 +950,6 @@
     font-size: 0.8rem;
   }
 }
-
 
 @media (max-width: 480px) {
   .lokasi-map {

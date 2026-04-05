@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rental Mobil</title>
   <link rel="stylesheet" href="../css/nav-adm.css" />
+  <link rel="stylesheet" href="../css/admin/dashboard.css" />
 </head>
 
 <body>
@@ -45,13 +46,230 @@
 
   <!-- navbar -->
   <nav class="navbar-admin">
-      <img src="../assets/images/logo.svg" alt="Aflah Jaya Rental">
-
+    <img src="../assets/images/logo.svg" alt="Aflah Jaya Rental">
     <div class="profile-admin">
       <p>Admin</p>
       <img src="../assets/images/Rectangle 1.png" alt="Profile" class="foto-admin">
     </div>
   </nav>
+
+  <!-- dashboard content -->
+  <div class="dashboard-wrapper">
+
+    <!-- Greeting -->
+    <h1 class="greeting">Selamat datang, Admin!</h1>
+
+    <!-- Stat Cards -->
+    <div class="stat-cards">
+      <div class="stat-card">
+        <p class="stat-label">Total Pendapatan Hari Ini</p>
+        <p class="stat-value">Rp 4,8 jt</p>
+      </div>
+      <div class="stat-card">
+        <p class="stat-label">Total Pendapatan Bulan Ini</p>
+        <p class="stat-value">Rp 48,7 jt</p>
+      </div>
+      <div class="stat-card">
+        <p class="stat-label-3">Total Pendapatan Keseluruhan</p>
+        <p class="stat-value">Rp 187 jt</p>
+      </div>
+      <div class="stat-card">
+        <p class="stat-label">Jumlah Transaksi Berhasil</p>
+        <p class="stat-value">248</p>
+      </div>
+    </div>
+
+    <!-- Laporan Total Pendapatan -->
+    <div class="laporan-card">
+      <div class="laporan-header">
+        <div>
+          <h2 class="laporan-title">Laporan Total Pendapatan</h2>
+          <p class="laporan-subtitle">Saring data pendapatan berdasarkan rentang waktu</p>
+        </div>
+        <button class="btn-filter">Terapkan Filter</button>
+      </div>
+
+      <div class="filter-row">
+        <div class="filter-group">
+          <label>Tanggal</label>
+          <div class="input-icon">
+            <input type="date"/>
+          </div>
+        </div>
+
+        <span class="filter-sep">s/d</span>
+
+        <div class="filter-group">
+          <label>Tanggal</label>
+          <div class="input-icon">
+            <input type="date" />
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <label>Bulan</label>
+          <div class="input-icon select-wrap">
+            <select>
+              <option>Mei</option>
+              <option>Juni</option>
+              <option>Juli</option>
+            </select>
+            <img src="../assets/icon/chevron-down.svg" alt="chevron" />
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <label>Tahun</label>
+          <div class="input-icon select-wrap">
+            <select>
+              <option>2024</option>
+              <option>2025</option>
+              <option>2026</option>
+            </select>
+            <img src="../assets/icon/chevron-down.svg" alt="chevron" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Summary Bar -->
+      <div class="summary-bar">
+        <div class="summary-item">
+          <p class="summary-label">TOTAL PENDAPATAN</p>
+          <p class="summary-value">Rp 20.757.443</p>
+        </div>
+        <div class="summary-item">
+          <p class="summary-label">JUMLAH TRANSAKSI</p>
+          <p class="summary-value">22</p>
+        </div>
+        <div class="summary-item">
+          <p class="summary-label">RATA - RATA PER TRANSAKSI</p>
+          <p class="summary-value">Rp 943.515</p>
+        </div>
+        <div class="summary-item">
+          <p class="summary-label">PERIODE</p>
+          <p class="summary-value">2024-09-12 s/d 2024/12/23</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="bottom-section">
+
+      <!-- Top 5 Mobil -->
+      <div class="top5-card">
+        <h2 class="section-title">Top 5 Mobil Paling Laris</h2>
+        <p class="section-subtitle">Berdasarkan total transaksi berhasil</p>
+
+        <div class="top5-list">
+          <div class="top5-item">
+            <div class="rank-badge">1.</div>
+            <div class="car-thumb">
+              <img src="../assets/images/big-car.svg" alt="mobil">
+            </div>            
+            <div class="car-info">
+              <p class="car-name">Toyota Avanza 2023</p>
+              <p class="car-rented">30x disewa</p>
+            </div>
+          </div>
+          <div class="top5-item">
+            <div class="rank-badge">2.</div>
+            <div class="car-thumb">
+              <img src="../assets/images/brio.svg" alt="mobil">
+            </div>              
+            <div class="car-info">
+              <p class="car-name">Honda Brio 2022</p>
+              <p class="car-rented">28x disewa</p>
+            </div>
+          </div>
+          <div class="top5-item">
+            <div class="rank-badge">3.</div>
+            <div class="car-thumb">
+              <img src="../assets/images/car-daihatsuxenia.jpeg" alt="mobil">
+            </div>     
+            <div class="car-info">
+              <p class="car-name">Daihatsu Xenia</p>
+              <p class="car-rented">22x disewa</p>
+            </div>
+          </div>
+          <div class="top5-item">
+            <div class="rank-badge">4.</div>
+            <div class="car-thumb">
+              <img src="../assets/images/big-car.svg" alt="mobil">
+            </div>                 
+            <div class="car-info">
+              <p class="car-name">Toyota Innova Reborn</p>
+              <p class="car-rented">19x disewa</p>
+            </div>
+          </div>
+          <div class="top5-item">
+            <div class="rank-badge">5.</div>
+            <div class="car-thumb">
+              <img src="../assets/images/brio.svg" alt="mobil">
+            </div>                 
+            <div class="car-info">
+              <p class="car-name">Daihatsu Ayla</p>
+              <p class="car-rented">10x disewa</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chart -->
+      <div class="chart-card">
+        <h2 class="section-title">Jumlah Penyewaan Per Mobil</h2>
+        <p class="section-subtitle chart-subtitle">Bulan Ini</p>
+
+        <div class="bar-list">
+          <div class="bar-item">
+            <span class="bar-label">Toyota Avanza 2023</span>
+            <div class="bar-track"><div class="bar-fill" style="width: 100%"></div></div>
+            <span class="bar-count">(10)</span>
+          </div>
+          <div class="bar-item">
+            <span class="bar-label">Honda Brio 2022</span>
+            <div class="bar-track"><div class="bar-fill" style="width: 90%"></div></div>
+            <span class="bar-count">(9)</span>
+          </div>
+          <div class="bar-item">
+            <span class="bar-label">Daihatsu Xenia</span>
+            <div class="bar-track"><div class="bar-fill" style="width: 90%"></div></div>
+            <span class="bar-count">(9)</span>
+          </div>
+          <div class="bar-item">
+            <span class="bar-label">Toyota Innova Reborn</span>
+            <div class="bar-track"><div class="bar-fill" style="width: 90%"></div></div>
+            <span class="bar-count">(9)</span>
+          </div>
+          <div class="bar-item">
+            <span class="bar-label">Daihatsu Ayla</span>
+            <div class="bar-track"><div class="bar-fill" style="width: 80%"></div></div>
+            <span class="bar-count">(8)</span>
+          </div>
+          <div class="bar-item">
+            <span class="bar-label">Suzuki Ertiga</span>
+            <div class="bar-track"><div class="bar-fill" style="width: 80%"></div></div>
+            <span class="bar-count">(8)</span>
+          </div>
+          <div class="bar-item">
+            <span class="bar-label">Toyota Fortuner</span>
+            <div class="bar-track"><div class="bar-fill" style="width: 70%"></div></div>
+            <span class="bar-count">(7)</span>
+          </div>
+          <div class="bar-item">
+            <span class="bar-label">Mitsubishi Xpander</span>
+            <div class="bar-track"><div class="bar-fill" style="width: 50%"></div></div>
+            <span class="bar-count">(5)</span>
+          </div>
+          <div class="bar-item">
+            <span class="bar-label">Toyota Agya</span>
+            <div class="bar-track"><div class="bar-fill" style="width: 30%"></div></div>
+            <span class="bar-count">(3)</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 
 </body>
 
