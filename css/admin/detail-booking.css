@@ -75,13 +75,12 @@
 
 .gambar {
     height: 9.375rem;
-    background: #d9d9d9;
+    width: 100%;
     border-radius: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 0.938rem;
-    color: #ffffff;
 }
 
 /* Tombol */
@@ -215,4 +214,17 @@
 
 .ya:hover {
     background-color: #6aa845;
+}
+
+/* responsive */
+
+@media (max-width: 660px) {
+    .lihat-detail {
+        margin-left: 0 ;
+        padding: 2rem;
+    }
+
+    .lihat-detail-card {
+        padding: 3rem;
+    }
 }

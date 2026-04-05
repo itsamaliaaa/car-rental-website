@@ -118,3 +118,16 @@
   background-color: #0e2781;
   transform: translateY(-1px);
 }
+
+/* responsive */
+
+@media (max-width: 660px) {
+    .tambah-mobil {
+        margin-left: 0 ;
+        padding: 2rem;
+    }
+
+    .tambah-mobil-card {
+        padding: 3rem;
+    }
+}
