@@ -223,11 +223,31 @@
 
 @media (max-width: 660px) {
     .edit-mobil {
-        margin-left: 0 ;
-        padding: 2rem;
+        margin-left: 0;
+        padding: 2rem; 
     }
 
     .edit-mobil-card {
-        padding: 3rem;
+        padding: 2.5rem;
+    }
+
+    .judul {
+        font-size: 1.5rem; 
+        text-align: center;
+        margin-top: 1.25rem;
+    }
+
+    .edit-container {
+        grid-template-columns: 1fr; 
+        gap: 0.5rem;
+    }
+
+    .input-besar {
+        min-height: 8rem; 
+    }
+
+    .edit {
+        margin-top: 1rem;
+        padding: 1rem;
     }
 }
