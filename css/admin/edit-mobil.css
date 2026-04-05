@@ -58,6 +58,7 @@
     font-size: 1rem;
     color: #545454;
     min-height: 1.25rem;
+    width: 100%;
     display: flex;
     align-items: center;
     box-sizing: border-box;
@@ -65,6 +66,7 @@
 
 .input-besar {
     align-items: flex-start;
+    width: 100%;
     min-height: 13.65rem;
     line-height: 1.5;
 }
@@ -90,30 +92,30 @@
 
 /* Reset Select */
 .select-custom {
-    width: 100% ;
-    padding: 0.75rem 2.5rem 0.75rem 1rem ; 
-    border: 1px solid #545454 ;
-    border-radius: 0.5rem ;
-    background-color: #ffffff ;
-    font-size: 1rem ;
-    color: #545454 ;
-    cursor: pointer ;
-    box-sizing: border-box ;
+    width: 100%;
+    padding: 0.75rem 2.5rem 0.75rem 1rem;
+    border: 1px solid #545454;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    font-size: 1rem;
+    color: #545454;
+    cursor: pointer;
+    box-sizing: border-box;
 
     /* HAPUS PANAH BAWAAN */
-    appearance: none ;
-    -webkit-appearance: none ;
-    -moz-appearance: none ;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
 .ikon-select-custom {
-    position: absolute ;
-    right: 1rem ; 
-    width: 0.8rem ; 
-    height: 0.8rem ;
-    pointer-events: none ;
-    top: 50% ;
-    margin-top: -0.40rem ;
+    position: absolute;
+    right: 1rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    pointer-events: none;
+    top: 50%;
+    margin-top: -0.40rem;
 }
 
 
@@ -215,16 +217,54 @@
 }
 
 .edit:hover {
-  background-color: #0e2781;
-  transform: translateY(-1px);
+    background-color: #0e2781;
+    transform: translateY(-1px);
 }
 
 /* responsive */
 
+@media (max-width: 1280px) {
+    .edit-mobil {
+        margin-left: 18rem;
+        padding: 6rem 2rem 2rem 2rem;
+    }
+
+    .edit-mobil-card {
+        padding: 2rem;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .edit-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+    }
+
+    .right-column {
+        grid-column: span 2;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .input-container {
+        width: 100%;
+    }
+
+    .input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
 @media (max-width: 660px) {
+    .right-column {
+        grid-column: span 1;
+        grid-template-columns: 1fr;
+    }
+
     .edit-mobil {
         margin-left: 0;
-        padding: 2rem; 
+        padding: 2rem;
     }
 
     .edit-mobil-card {
@@ -232,18 +272,18 @@
     }
 
     .judul {
-        font-size: 1.5rem; 
+        font-size: 1.5rem;
         text-align: center;
         margin-top: 1.25rem;
     }
 
     .edit-container {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
         gap: 0.5rem;
     }
 
     .input-besar {
-        min-height: 8rem; 
+        min-height: 8rem;
     }
 
     .edit {
