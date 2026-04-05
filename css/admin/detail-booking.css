@@ -5,7 +5,7 @@
     padding: 8.5rem 4rem 2.5rem 4rem;
     display: flex;
     flex-direction: column;
-    background-color: #f4f7fe;
+    background-color: #f1f1f1;
     box-sizing: border-box;
 }
 
@@ -23,8 +23,8 @@
 
 .judul {
     margin: 0;
-    font-size: 2.5rem;
-    font-weight: 700;
+    font-size: 2rem;
+    font-weight: 600;
     color: #0b1f67;
 }
 
@@ -94,6 +94,7 @@
     border-radius: 0.5rem;
     cursor: pointer;
     margin-bottom: 1.25rem;
+    font-weight: 600;
 }
 
 .konfirmasi {
@@ -108,10 +109,12 @@
     cursor: pointer;
     margin-bottom: 0;
     box-sizing: border-box;
+    font-weight: 600;
 }
 
 .download:hover, .konfirmasi:hover {
-    background: #152c7e;
+  background-color: #0e2781;
+  transform: translateY(-1px);
 }
 
 /* select */

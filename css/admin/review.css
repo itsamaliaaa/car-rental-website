@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #f4f7fe;
+  background-color: #f1F1F1;
   box-sizing: border-box;
 }
 
@@ -24,9 +24,9 @@
 
 .judul {
   margin: 0;
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #0b1f67;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #0B1F67;
 }
 
 /* ================================

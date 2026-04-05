@@ -1,5 +1,5 @@
 .btn-primary {
-  background: #1e3a8a;
+  background: #0b1f67;
   color: #fff;
   border: none;
   padding: 0.625rem 1.5rem;
@@ -9,10 +9,12 @@
   font-weight: 500;
   white-space: nowrap;
   transition: background 0.2s;
+  font-weight: 600;
 }
 
 .btn-primary:hover {
-  background: #1a327a;
+  background-color: #0e2781;
+  transform: translateY(-1px);
 }
 
 .container {
@@ -299,6 +301,33 @@
 .review-field input[type="file"] {
   font-size: 0.8125rem;
   color: #374151;
+}
+
+.custom-file input[type="file"] {
+  display: none;
+}
+
+.file-label {
+  display: flex;
+  align-items: center;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.file-btn {
+  background: #e5e7eb;
+  padding: 0.625rem 1rem;
+  color: #111827;
+  white-space: nowrap;
+}
+
+.file-name {
+  padding: 0.625rem 0.875rem;
+  color: #6b7280;
+  flex: 1;
 }
 
 .review-card .btn-primary {
