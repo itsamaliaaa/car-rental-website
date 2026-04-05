@@ -1,242 +1,323 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moderasi Review</title>
+    <link rel="stylesheet" href="../css/nav-adm.css" />
+    <link rel="stylesheet" href="../css/admin/review.css" />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="sidebar-admin">
+      <div class="sidebar-container">
+        <a href="dashboard.html" class="menu-item">
+          <img
+            src="../assets/icon/dashboard.svg"
+            alt="Icon"
+            class="menu-icon"
+          />
+          <p>Dashboard</p>
+        </a>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Moderasi Review</title>
-  <link rel="stylesheet" href="../css/nav-adm.css" />
-  <link rel="stylesheet" href="../css/admin/review.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-</head>
+        <a href="mobil.html" class="menu-item">
+          <img src="../assets/icon/mobil.svg" alt="Icon" class="menu-icon" />
+          <p>Manajemen Mobil</p>
+        </a>
 
-<body>
+        <a href="booking.html" class="menu-item">
+          <img src="../assets/icon/elements.svg" alt="Icon" class="menu-icon" />
+          <p>Manajemen Booking</p>
+        </a>
 
-  <!-- Sidebar -->
-  <div class="sidebar-admin" id="sidebar-mobile">
-    <a href="#" class="close"> X </a>
-    <div class="sidebar-container">
-      <a href="dashboard.html" class="menu-item">
-        <img src="../assets/icon/dashboard.svg" alt="Icon" class="menu-icon" />
-        <p>Dashboard</p>
-      </a>
+        <a href="review.html" class="menu-item active">
+          <img src="../assets/icon/review.svg" alt="Icon" class="menu-icon" />
+          <p>Moderasi Review</p>
+        </a>
+      </div>
 
-      <a href="mobil.html" class="menu-item">
-        <img src="../assets/icon/mobil.svg" alt="Icon" class="menu-icon" />
-        <p>Manajemen Mobil</p>
-      </a>
-
-      <a href="booking.html" class="menu-item">
-        <img src="../assets/icon/elements.svg" alt="Icon" class="menu-icon" />
-        <p>Manajemen Booking</p>
-      </a>
-
-      <a href="review.html" class="menu-item active">
-        <img src="../assets/icon/review.svg" alt="Icon" class="menu-icon" />
-        <p>Moderasi Review</p>
-      </a>
-    </div>
-
-    <div class="footer-sidebar">
-      <div class="line"></div>
-      <a href="login.html" class="menu-item">
-        <img src="../assets/icon/logout-04.svg" alt="Icon" class="menu-icon" />
-        <p style="color: #cd2f4b;">Logout</p>
-      </a>
-    </div>
-  </div>
-
-  <!-- Navbar -->
-  <nav class="navbar-admin">
-    <img src="../assets/images/logo.svg" alt="Aflah Jaya Rental">
-
-    <a href="#sidebar-mobile" class="profile-admin" style="text-decoration: none;">
-      <p>Admin</p>
-      <img src="../assets/images/Rectangle 1.png" alt="Profile" class="foto-admin">
-    </a>
-  </nav>
-
-  <!-- Moderasi Review -->
-  <div class="manajemen-review">
-    <div class="manajemen-review-card">
-
-      <h1 class="judul">Moderasi Review</h1>
-
-      <!-- Cards -->
-      <div id="review-cards">
-
-        <div class="review-card">
-          <div class="card-header">
-            <div class="header-left">
-              <div class="car-image"></div>
-              <div class="car-info">
-                <h3 class="car-title">Toyota Avanza 2023</h3>
-                <div class="stars">★★★★★</div>
-              </div>
-            </div>
-            <div class="header-right">
-              <div class="email">bagaswira@gmail.com</div>
-              <div class="date">12 Maret 2026</div>
-            </div>
-          </div>
-          <div class="divider"></div>
-          <div class="review-content">
-            Pengalaman pertama sewa di sini bener-bener memuaskan. Mobilnya
-            datang dalam kondisi bersih, interior juga wangi dan nyaman
-            dipakai. Proses bookingnya nggak ribet, dari isi data sampai
-            konfirmasi via WhatsApp semuanya cepat. Adminnya juga responsif
-            banget kalau ditanya-tanya. Overall recommended banget 👍
-          </div>
-          <div class="card-footer">
-            <span class="status-label">Status:</span>
-            <span class="status-value">Tampil</span>
-          </div>
-        </div>
-
-        <div class="review-card">
-          <div class="card-header">
-            <div class="header-left">
-              <div class="car-image"></div>
-              <div class="car-info">
-                <h3 class="car-title">Toyota Avanza 2023</h3>
-                <div class="stars">★★★★★</div>
-              </div>
-            </div>
-            <div class="header-right">
-              <div class="email">bagaswira@gmail.com</div>
-              <div class="date">12 Maret 2026</div>
-            </div>
-          </div>
-          <div class="divider"></div>
-          <div class="review-content">
-            Pengalaman pertama sewa di sini bener-bener memuaskan. Mobilnya
-            datang dalam kondisi bersih, interior juga wangi dan nyaman
-            dipakai. Proses bookingnya nggak ribet, dari isi data sampai
-            konfirmasi via WhatsApp semuanya cepat. Adminnya juga responsif
-            banget kalau ditanya-tanya. Overall recommended banget 👍
-          </div>
-          <div class="card-footer">
-            <span class="status-label">Status:</span>
-            <span class="status-value">Tampil</span>
-          </div>
-        </div>
-
-        <div class="review-card">
-          <div class="card-header">
-            <div class="header-left">
-              <div class="car-image"></div>
-              <div class="car-info">
-                <h3 class="car-title">Toyota Avanza 2023</h3>
-                <div class="stars">★★★★★</div>
-              </div>
-            </div>
-            <div class="header-right">
-              <div class="email">bagaswira@gmail.com</div>
-              <div class="date">12 Maret 2026</div>
-            </div>
-          </div>
-          <div class="divider"></div>
-          <div class="review-content">
-            Pengalaman pertama sewa di sini bener-bener memuaskan. Mobilnya
-            datang dalam kondisi bersih, interior juga wangi dan nyaman
-            dipakai. Proses bookingnya nggak ribet, dari isi data sampai
-            konfirmasi via WhatsApp semuanya cepat. Adminnya juga responsif
-            banget kalau ditanya-tanya. Overall recommended banget 👍
-          </div>
-          <div class="card-footer">
-            <span class="status-label">Status:</span>
-            <span class="status-value">Tampil</span>
-          </div>
-        </div>
-
-        <div class="review-card">
-          <div class="card-header">
-            <div class="header-left">
-              <div class="car-image"></div>
-              <div class="car-info">
-                <h3 class="car-title">Toyota Avanza 2023</h3>
-                <div class="stars">★★★★★</div>
-              </div>
-            </div>
-            <div class="header-right">
-              <div class="email">bagaswira@gmail.com</div>
-              <div class="date">12 Maret 2026</div>
-            </div>
-          </div>
-          <div class="divider"></div>
-          <div class="review-content">
-            Pengalaman pertama sewa di sini bener-bener memuaskan. Mobilnya
-            datang dalam kondisi bersih, interior juga wangi dan nyaman
-            dipakai. Proses bookingnya nggak ribet, dari isi data sampai
-            konfirmasi via WhatsApp semuanya cepat. Adminnya juga responsif
-            banget kalau ditanya-tanya. Overall recommended banget 👍
-          </div>
-          <div class="card-footer">
-            <span class="status-label">Status:</span>
-            <span class="status-value">Tampil</span>
-          </div>
-        </div>
-
-        <div class="review-card">
-          <div class="card-header">
-            <div class="header-left">
-              <div class="car-image"></div>
-              <div class="car-info">
-                <h3 class="car-title">Toyota Avanza 2023</h3>
-                <div class="stars">★★★★★</div>
-              </div>
-            </div>
-            <div class="header-right">
-              <div class="email">bagaswira@gmail.com</div>
-              <div class="date">12 Maret 2026</div>
-            </div>
-          </div>
-          <div class="divider"></div>
-          <div class="review-content">
-            Pengalaman pertama sewa di sini bener-bener memuaskan. Mobilnya
-            datang dalam kondisi bersih, interior juga wangi dan nyaman
-            dipakai. Proses bookingnya nggak ribet, dari isi data sampai
-            konfirmasi via WhatsApp semuanya cepat. Adminnya juga responsif
-            banget kalau ditanya-tanya. Overall recommended banget 👍
-          </div>
-          <div class="card-footer">
-            <span class="status-label">Status:</span>
-            <span class="status-value">Tampil</span>
-          </div>
-        </div>
-
-        <div class="review-card">
-          <div class="card-header">
-            <div class="header-left">
-              <div class="car-image"></div>
-              <div class="car-info">
-                <h3 class="car-title">Toyota Avanza 2023</h3>
-                <div class="stars">★★★★★</div>
-              </div>
-            </div>
-            <div class="header-right">
-              <div class="email">bagaswira@gmail.com</div>
-              <div class="date">12 Maret 2026</div>
-            </div>
-          </div>
-          <div class="divider"></div>
-          <div class="review-content">
-            Pengalaman pertama sewa di sini bener-bener memuaskan. Mobilnya
-            datang dalam kondisi bersih, interior juga wangi dan nyaman
-            dipakai. Proses bookingnya nggak ribet, dari isi data sampai
-            konfirmasi via WhatsApp semuanya cepat. Adminnya juga responsif
-            banget kalau ditanya-tanya. Overall recommended banget 👍
-          </div>
-          <div class="card-footer">
-            <span class="status-label">Status:</span>
-            <span class="status-value">Tampil</span>
-          </div>
-        </div>
-
+      <div class="footer-sidebar">
+        <div class="line"></div>
+        <a href="login.html" class="menu-item">
+          <img
+            src="../assets/icon/logout-04.svg"
+            alt="Icon"
+            class="menu-icon"
+          />
+          <p style="color: #cd2f4b">Logout</p>
+        </a>
       </div>
     </div>
-  </div>
 
-</body>
+    <!-- Navbar -->
+    <nav class="navbar-admin">
+      <img src="../assets/images/logo.svg" alt="Aflah Jaya Rental" />
+      <div class="profile-admin">
+        <p>Admin</p>
+        <img
+          src="../assets/images/Rectangle 1.png"
+          alt="Profile"
+          class="foto-admin"
+        />
+      </div>
+    </nav>
 
+    <!-- Moderasi Review -->
+    <div class="manajemen-review">
+      <div class="manajemen-review-card">
+        <h1 class="judul">Moderasi Review</h1>
+        <div class="search-container">
+          <img
+            class="search-icon"
+            alt="search"
+            src="../assets/icon/search.svg"
+          />
+          <input type="text" class="search-input" placeholder="Cari Mobil" />
+        </div>
+
+        <!-- Cards -->
+        <div id="review-cards">
+          <div class="review-card">
+            <div class="card-header">
+              <div class="header-left">
+                <img
+                  class="car-image"
+                  src="../assets/images/big-car.svg"
+                  alt="mobil"
+                />
+                <div class="car-info">
+                  <div class="car-title">Toyota Avanza 2023</div>
+                  <div class="stars">★★★★★</div>
+                </div>
+              </div>
+              <div class="header-right">
+                <div class="email">bagaswira@gmail.com</div>
+                <div class="date">12 Maret 2026</div>
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="review-content">
+              Pengalaman pertama sewa di sini bener-bener memuaskan. Mobilnya
+              datang dalam kondisi bersih, interior juga wangi dan nyaman
+              dipakai. Proses bookingnya nggak ribet, dari isi data sampai
+              konfirmasi via WhatsApp semuanya cepat. Adminnya juga responsif
+              banget kalau ditanya-tanya. Overall recommended banget 👍
+            </div>
+            <div class="card-footer">
+              <div class="action-group">
+                <div class="status-group">
+                  <span class="status-label">Status:</span>
+                  <span class="status-value">Tampil</span>
+                </div>
+                <div class="btn-group">
+                  <button class="btn-hide">Hide</button>
+                  <button class="btn-show">Show</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="card-header">
+              <div class="header-left">
+                <img
+                  class="car-image"
+                  src="../assets/images/big-car.svg"
+                  alt="mobil"
+                />
+                <div class="car-info">
+                  <div class="car-title">Toyota Avanza 2023</div>
+                  <div class="stars">★★★★★</div>
+                </div>
+              </div>
+              <div class="header-right">
+                <div class="email">bagaswira@gmail.com</div>
+                <div class="date">12 Maret 2026</div>
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="review-content">
+              Pengalaman pertama sewa di sini bener-bener memuaskan. Mobilnya
+              datang dalam kondisi bersih, interior juga wangi dan nyaman
+              dipakai. Proses bookingnya nggak ribet, dari isi data sampai
+              konfirmasi via WhatsApp semuanya cepat. Adminnya juga responsif
+              banget kalau ditanya-tanya. Overall recommended banget 👍
+            </div>
+            <div class="card-footer">
+              <div class="action-group">
+                <div class="status-group">
+                  <span class="status-label">Status:</span>
+                  <span class="status-value">Tampil</span>
+                </div>
+                <div class="btn-group">
+                  <button class="btn-hide">Hide</button>
+                  <button class="btn-show">Show</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="card-header">
+              <div class="header-left">
+                <img
+                  class="car-image"
+                  src="../assets/images/big-car.svg"
+                  alt="mobil"
+                />
+                <div class="car-info">
+                  <div class="car-title">Toyota Avanza 2023</div>
+                  <div class="stars">★★★★★</div>
+                </div>
+              </div>
+              <div class="header-right">
+                <div class="email">bagaswira@gmail.com</div>
+                <div class="date">12 Maret 2026</div>
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="review-content">
+              Pengalaman pertama sewa di sini bener-bener memuaskan. Mobilnya
+              datang dalam kondisi bersih, interior juga wangi dan nyaman
+              dipakai. Proses bookingnya nggak ribet, dari isi data sampai
+              konfirmasi via WhatsApp semuanya cepat. Adminnya juga responsif
+              banget kalau ditanya-tanya. Overall recommended banget 👍
+            </div>
+            <div class="card-footer">
+              <div class="action-group">
+                <div class="status-group">
+                  <span class="status-label">Status:</span>
+                  <span class="status-value">Tampil</span>
+                </div>
+                <div class="btn-group">
+                  <button class="btn-hide">Hide</button>
+                  <button class="btn-show">Show</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="card-header">
+              <div class="header-left">
+                <img
+                  class="car-image"
+                  src="../assets/images/big-car.svg"
+                  alt="mobil"
+                />
+                <div class="car-info">
+                  <div class="car-title">Toyota Avanza 2023</div>
+                  <div class="stars">★★★★★</div>
+                </div>
+              </div>
+              <div class="header-right">
+                <div class="email">bagaswira@gmail.com</div>
+                <div class="date">12 Maret 2026</div>
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="review-content">
+              Pengalaman pertama sewa di sini bener-bener memuaskan. Mobilnya
+              datang dalam kondisi bersih, interior juga wangi dan nyaman
+              dipakai. Proses bookingnya nggak ribet, dari isi data sampai
+              konfirmasi via WhatsApp semuanya cepat. Adminnya juga responsif
+              banget kalau ditanya-tanya. Overall recommended banget 👍
+            </div>
+            <div class="card-footer">
+              <div class="action-group">
+                <div class="status-group">
+                  <span class="status-label">Status:</span>
+                  <span class="status-value">Tampil</span>
+                </div>
+                <div class="btn-group">
+                  <button class="btn-hide">Hide</button>
+                  <button class="btn-show">Show</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="card-header">
+              <div class="header-left">
+                <img
+                  class="car-image"
+                  src="../assets/images/big-car.svg"
+                  alt="mobil"
+                />
+                <div class="car-info">
+                  <div class="car-title">Toyota Avanza 2023</div>
+                  <div class="stars">★★★★★</div>
+                </div>
+              </div>
+              <div class="header-right">
+                <div class="email">bagaswira@gmail.com</div>
+                <div class="date">12 Maret 2026</div>
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="review-content">
+              Pengalaman pertama sewa di sini bener-bener memuaskan. Mobilnya
+              datang dalam kondisi bersih, interior juga wangi dan nyaman
+              dipakai. Proses bookingnya nggak ribet, dari isi data sampai
+              konfirmasi via WhatsApp semuanya cepat. Adminnya juga responsif
+              banget kalau ditanya-tanya. Overall recommended banget 👍
+            </div>
+            <div class="card-footer">
+              <div class="action-group">
+                <div class="status-group">
+                  <span class="status-label">Status:</span>
+                  <span class="status-value">Tampil</span>
+                </div>
+                <div class="btn-group">
+                  <button class="btn-hide">Hide</button>
+                  <button class="btn-show">Show</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="card-header">
+              <div class="header-left">
+                <img
+                  class="car-image"
+                  src="../assets/images/big-car.svg"
+                  alt="mobil"
+                />
+                <div class="car-info">
+                  <div class="car-title">Toyota Avanza 2023</div>
+                  <div class="stars">★★★★★</div>
+                </div>
+              </div>
+              <div class="header-right">
+                <div class="email">bagaswira@gmail.com</div>
+                <div class="date">12 Maret 2026</div>
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="review-content">
+              Pengalaman pertama sewa di sini bener-bener memuaskan. Mobilnya
+              datang dalam kondisi bersih, interior juga wangi dan nyaman
+              dipakai. Proses bookingnya nggak ribet, dari isi data sampai
+              konfirmasi via WhatsApp semuanya cepat. Adminnya juga responsif
+              banget kalau ditanya-tanya. Overall recommended banget 👍
+            </div>
+            <div class="card-footer">
+              <div class="action-group">
+                <div class="status-group">
+                  <span class="status-label">Status:</span>
+                  <span class="status-value">Tampil</span>
+                </div>
+                <div class="btn-group">
+                  <button class="btn-hide">Hide</button>
+                  <button class="btn-show">Show</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
